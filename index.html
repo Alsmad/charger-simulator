@@ -109,8 +109,8 @@
   .home-btn:hover { opacity: 1; background: #2a2a4a; border-color: #5a5a7a; }
   .fb-float-btn { position: fixed; bottom: 16px; right: 66px; z-index: 100; background: #1a1a2e; border: 1px solid #2a2a4a; color: #888; font-size: 12px; cursor: pointer; padding: 8px 14px; border-radius: 20px; display: flex; align-items: center; gap: 5px; transition: all .3s; opacity: .4; }
   .fb-float-btn:hover { opacity: 1; background: #2a2a4a; border-color: #7b68ee; color: #fff; }
-  .tips-label { font-size: 12px; color: #888; cursor: pointer; margin-left: 2px; }
-  .tips-label:hover { color: #bb99ff; }
+  .tips-label { font-size: 12px; color: #aaa; cursor: pointer; margin-left: 4px; background: #1a1a2e; border: 1px solid #2a2a4a; border-radius: 12px; padding: 1px 10px 1px 6px; display: inline-flex; align-items: center; gap: 2px; transition: all .2s; vertical-align: middle; }
+  .tips-label:hover { border-color: #7b68ee; color: #bb99ff; background: #222244; }
 
   /* SEO content — readable by search engines, minimal visual impact */
   .seo-content {
@@ -680,7 +680,7 @@
       <span>🔥 爆炸: <strong id="explodeCount">0</strong></span>
       <span>👽 抽象: <strong id="abstractCount">0</strong></span>
       <span>⏰ 忘拔: <strong id="forgetCount">0</strong></span>
-      <span>🏆 成就: <strong id="achiCount">0</strong>/<span id="achiTotal">0</span><button class="trophy-btn" id="trophyBtn" title="查看成就">🏆</button><button class="trophy-btn" id="tipsBtn" title="充电小知识">💡</button><span class="tips-label">知识</span></span>
+      <span>🏆 成就: <strong id="achiCount">0</strong>/<span id="achiTotal">0</span><button class="trophy-btn" id="trophyBtn" title="查看成就">🏆</button><button class="trophy-btn" id="tipsBtn" title="充电小知识">💡</button><span class="tips-label" id="tipsLabel">知识</span></span>
     </div>
   </div>
 
@@ -2235,7 +2235,7 @@ function filterTips(cat) {
 
 if (tipsBtn && tipsOverlay) {
   tipsBtn.addEventListener('click', (e) => { e.stopPropagation(); openTipsModal(); });
-  document.querySelector('.tips-label')?.addEventListener('click', (e) => { e.stopPropagation(); openTipsModal(); });
+  document.getElementById('tipsLabel')?.addEventListener('click', (e) => { e.stopPropagation(); openTipsModal(); });
 }
 if (tipsModalClose && tipsOverlay) {
   tipsModalClose.addEventListener('click', () => tipsOverlay.classList.remove('open'));
