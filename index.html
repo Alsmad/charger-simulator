@@ -3,34 +3,34 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>⚡ 充电模拟器 - 在线小游戏 | 选充电器看设备爆炸</title>
+<title>�?充电模拟�?- 在线小游�?| 选充电器看设备爆�?/title>
 <link rel="icon" href="favicon.svg">
 <meta name="theme-color" content="#1a1a2e">
-<meta name="description" content="充电模拟器是一款好玩的在线小游戏。选设备+选充电器，看正常充电、接口不匹配、爆炸还是隐藏结局？34款设备、22款充电器、41个成就等你探索！免费在线玩，无需下载。发现隐藏彩蛋和抽象事件，充完记得拔充电器！">
-<meta name="keywords" content="充电模拟器,小游戏,在线游戏,充电器模拟,抽象游戏,免费小游戏,网页游戏,模拟器游戏,充电,爆炸模拟,隐藏结局,解压游戏,充电模拟,在线模拟器">
+<meta name="description" content="充电模拟器是一款好玩的在线小游戏。选设�?选充电器，看正常充电、接口不匹配、爆炸还是隐藏结局�?4款设备�?2款充电器�?1个成就等你探索！免费在线玩，无需下载。发现隐藏彩蛋和抽象事件，充完记得拔充电器！">
+<meta name="keywords" content="充电模拟�?小游�?在线游戏,充电器模�?抽象游戏,免费小游�?网页游戏,模拟器游�?充电,爆炸模拟,隐藏结局,解压游戏,充电模拟,在线模拟�?>
 <meta name="robots" content="index, follow">
 <meta name="author" content="福星">
 <link rel="canonical" href="https://www.charger-simulator.top">
 
 <!-- Open Graph -->
-<meta property="og:title" content="⚡ 充电模拟器 - 在线小游戏">
-<meta property="og:description" content="选设备+充电器，看不同组合的爆笑结局！34款设备22款充电器41个成就，免费在线玩。充完不拔后果自负！">
+<meta property="og:title" content="�?充电模拟�?- 在线小游�?>
+<meta property="og:description" content="选设�?充电器，看不同组合的爆笑结局�?4款设�?2款充电器41个成就，免费在线玩。充完不拔后果自负！">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://www.charger-simulator.top">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:site_name" content="充电模拟器">
+<meta property="og:site_name" content="充电模拟�?>
 
 <!-- Twitter Card -->
-<meta name="twitter:title" content="⚡ 充电模拟器 - 在线小游戏">
-<meta name="twitter:description" content="选设备+充电器，看正常充电、爆炸还是隐藏结局？34款设备22款充电器等你试！">
+<meta name="twitter:title" content="�?充电模拟�?- 在线小游�?>
+<meta name="twitter:description" content="选设�?充电器，看正常充电、爆炸还是隐藏结局�?4款设�?2款充电器等你试！">
 
 <!-- JSON-LD Structured Data -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "WebApplication",
-  "name": "充电模拟器",
-  "description": "一款好玩的在线小游戏。选择设备和充电器，观察不同组合带来的各种结局——正常充电、接口不匹配、爆炸、过热、以及各种抽象隐藏事件。34款设备、22款充电器、41个成就、40条小知识。",
+  "name": "充电模拟�?,
+  "description": "一款好玩的在线小游戏。选择设备和充电器，观察不同组合带来的各种结局——正常充电、接口不匹配、爆炸、过热、以及各种抽象隐藏事件�?4款设备�?2款充电器�?1个成就�?0条小知识�?,
   "applicationCategory": "GameApplication",
   "operatingSystem": "Any",
   "browserRequirements": "Requires JavaScript",
@@ -110,7 +110,7 @@
   .fb-float-btn { position: fixed; bottom: 16px; right: 66px; z-index: 100; background: #1a1a2e; border: 1px solid #2a2a4a; color: #888; font-size: 12px; cursor: pointer; padding: 8px 14px; border-radius: 20px; display: flex; align-items: center; gap: 5px; transition: all .3s; opacity: .4; }
   .fb-float-btn:hover { opacity: 1; background: #2a2a4a; border-color: #7b68ee; color: #fff; }
 
-  /* SEO content — readable by search engines, minimal visual impact */
+  /* SEO content �?readable by search engines, minimal visual impact */
   .seo-content {
     max-width: 960px; margin: 40px auto; padding: 20px 16px 60px;
     color: #555; font-size: 13px; line-height: 1.7;
@@ -639,101 +639,7 @@
   }
   .feedback-btn:hover { background: #3a3a5c; border-color: #7b68ee; color: #fff; }
 
-  /* ===== DEV PANEL ===== */
-  .dev-panel {
-    position: fixed; bottom: 0; left: 0; right: 0; z-index: 99999;
-    background: #0f0f1a; border-top: 2px solid #ff8844;
-    box-shadow: 0 -4px 30px rgba(255,136,68,.15);
-    display: none; flex-direction: column;
-    height: 45vh; min-height: 200px; max-height: 60vh;
-    transition: height .3s ease;
-  }
-  .dev-panel.open { display: flex; }
-  .dev-bar {
-    display: flex; align-items: center; gap: 8px;
-    padding: 6px 14px; background: #1a1a2e;
-    border-bottom: 1px solid #2a2a4a; flex-shrink: 0;
-    cursor: ns-resize;
-  }
-  .dev-bar-title { font-size: 13px; font-weight: 700; color: #ff8844; margin-right: auto; }
-  .dev-tab {
-    background: none; border: none; color: #666; cursor: pointer;
-    font-size: 11px; padding: 4px 10px; border-radius: 6px;
-    transition: all .2s;
-  }
-  .dev-tab:hover { color: #aaa; background: #2a2a4a; }
-  .dev-tab.active { color: #ff8844; background: #2a1a0a; }
-  .dev-close-btn {
-    background: none; border: none; color: #666; cursor: pointer;
-    font-size: 18px; padding: 2px 6px; border-radius: 6px;
-  }
-  .dev-close-btn:hover { background: #3a1a1a; color: #ff6666; }
-  .dev-body {
-    flex: 1; overflow-y: auto; padding: 10px 14px;
-  }
-  .dev-tab-content { display: none; }
-  .dev-tab-content.active { display: block; }
-  .dev-section { margin-bottom: 12px; }
-  .dev-section-title {
-    font-size: 11px; font-weight: 700; color: #888;
-    margin-bottom: 6px; text-transform: uppercase; letter-spacing: 1px;
-  }
-  .dev-stat-grid {
-    display: flex; gap: 6px; flex-wrap: wrap; margin-bottom: 8px;
-  }
-  .dev-stat-card {
-    background: #1a1a2e; border: 1px solid #2a2a4a;
-    border-radius: 6px; padding: 4px 8px; text-align: center; min-width: 60px;
-  }
-  .dev-stat-num { font-size: 16px; font-weight: 800; color: #00d4ff; display: block; }
-  .dev-stat-label { font-size: 9px; color: #666; }
-  .dev-btn {
-    background: #2a2a4a; border: 1px solid #4a4a6a;
-    color: #ccc; font-size: 11px; padding: 4px 10px;
-    border-radius: 6px; cursor: pointer; transition: all .2s; margin: 2px;
-  }
-  .dev-btn:hover { background: #3a3a5c; border-color: #7b68ee; color: #fff; }
-  .dev-btn.danger { border-color: #6a2a2a; color: #ff6666; }
-  .dev-btn.danger:hover { background: #3a1a1a; border-color: #ff4444; }
-  .dev-btn.success { border-color: #2a5a2a; color: #66ff66; }
-  .dev-btn.success:hover { background: #1a3a1a; }
-  .dev-btn.glow { border-color: #ff8844; animation: newBtnGlow 1.5s ease infinite; }
-  .dev-event-item {
-    background: #1a1a2e; border: 1px solid #2a2a4a;
-    border-radius: 6px; padding: 5px 8px; margin-bottom: 4px;
-    font-size: 11px; line-height: 1.4;
-  }
-  .dev-event-item .e-label { font-size: 9px; color: #888; display: block; }
-  .dev-achi-item {
-    display: flex; align-items: flex-start; gap: 6px;
-    background: #1a1a2e; border: 1px solid #2a2a4a;
-    border-radius: 6px; padding: 5px 8px; margin-bottom: 3px;
-    font-size: 11px;
-  }
-  .dev-achi-item .achi-icon { font-size: 16px; flex-shrink: 0; }
-  .dev-achi-item .achi-info { flex: 1; min-width: 0; }
-  .dev-achi-item .achi-name { font-weight: 600; color: #ccc; }
-  .dev-achi-item .achi-condition { font-size: 10px; color: #888; }
-  .dev-achi-item.locked .achi-name { color: #555; }
-  .dev-select-group { display: flex; gap: 4px; flex-wrap: wrap; margin-bottom: 6px; }
-  .dev-select-group select, .dev-select-group button {
-    background: #2a2a4a; border: 1px solid #4a4a6a;
-    color: #ccc; padding: 3px 8px; border-radius: 6px; font-size: 11px;
-  }
-  .dev-select-group select { min-width: 100px; }
-  .dev-result-box {
-    background: #1a1a2e; border: 1px solid #2a2a4a;
-    border-radius: 6px; padding: 8px; margin-top: 4px;
-    font-size: 11px; white-space: pre-line; line-height: 1.4;
-    min-height: 30px; color: #aaa;
-  }
-  .dev-json {
-    font-size: 10px; color: #888; font-family: monospace;
-    background: #0a0a14; padding: 8px; border-radius: 6px;
-    max-height: 150px; overflow: auto; white-space: pre-wrap; word-break: break-all;
-  }
-  .dev-badge { font-size: 9px; padding: 1px 5px; border-radius: 4px; background: #2a2a4a; color: #888; margin-left: 4px; }
-  .dev-badge.unlocked { background: #1a3a1a; color: #66ff66; }
+  
 </style>
 </head>
 <body>
@@ -742,17 +648,17 @@
 <div id="coverScreen">
   <div class="cover-bg-grid"></div>
   <div class="cover-bg-circles"><span></span><span></span><span></span></div>
-  <div class="cover-ad-controls"><button class="cover-ad-toggle" id="adToggle">📢 广告位</button></div>
+  <div class="cover-ad-controls"><button class="cover-ad-toggle" id="adToggle">📢 广告�?/button></div>
   <div class="cover-content">
-    <div class="cover-logo">⚡</div>
-    <div class="cover-title">充电模拟器</div>
-    <div class="cover-subtitle">选对充电器 · 还是选错 · 或者穿越？</div>
+    <div class="cover-logo">�?/div>
+    <div class="cover-title">充电模拟�?/div>
+    <div class="cover-subtitle">选对充电�?· 还是选错 · 或者穿越？</div>
     <div class="cover-devices"><span>📱</span><span>💻</span><span>🎮</span><span>📟</span><span>🎧</span><span>📞</span><span>🔋</span><span>🚗</span><span>👽</span></div>
-    <button class="cover-start-btn" id="startBtn">▶ 开始充电模拟</button>
-    <div class="cover-hint">按 <span class="key">Enter</span> 或点击 · 充完记得<b style="color:#666;">拔</b>充电器</div>
+    <button class="cover-start-btn" id="startBtn">�?开始充电模�?/button>
+    <div class="cover-hint">�?<span class="key">Enter</span> 或点�?· 充完记得<b style="color:#666;">�?/b>充电�?/div>
   </div>
   <div class="cover-ad-section" id="coverAdSection">
-    <div class="cover-ad-label">—— 广告 ——</div>
+    <div class="cover-ad-label">—�?广告 —�?/div>
     <div class="cover-ad-banner">
       <ins class="adsbygoogle" style="display:inline-block;width:728px;height:90px" data-ad-client="ca-pub-8813335635822438" data-ad-slot="3017031218"></ins>
       <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
@@ -767,14 +673,14 @@
 <!-- ===== MAIN GAME ===== -->
 <div id="gameContent">
   <div class="header">
-    <h1>⚡ 充电模拟器</h1>
-    <p>选对了充满 · 选错了爆炸 · 忘了拔...后果自负 💥👽</p>
+    <h1>�?充电模拟�?/h1>
+    <p>选对了充�?· 选错了爆�?· 忘了�?..后果自负 💥👽</p>
     <div class="stats-bar">
       <span>尝试: <strong id="attemptCount">0</strong></span>
       <span>🔥 爆炸: <strong id="explodeCount">0</strong></span>
       <span>👽 抽象: <strong id="abstractCount">0</strong></span>
-      <span>⏰ 忘拔: <strong id="forgetCount">0</strong></span>
-      <span>🏆 成就: <strong id="achiCount">0</strong>/<span id="achiTotal">0</span><button class="trophy-btn" id="trophyBtn" title="查看成就">🏆</button><button class="trophy-btn" id="tipsBtn" title="充电小知识">💡</button><span class="tips-label">知识</span></span>
+      <span>�?忘拔: <strong id="forgetCount">0</strong></span>
+      <span>🏆 成就: <strong id="achiCount">0</strong>/<span id="achiTotal">0</span><button class="trophy-btn" id="trophyBtn" title="查看成就">🏆</button><button class="trophy-btn" id="tipsBtn" title="充电小知�?>💡</button><span class="tips-label">知识</span></span>
     </div>
   </div>
 
@@ -783,9 +689,9 @@
     <div class="challenge-icon" id="challengeIcon">🎯</div>
     <div class="challenge-info">
       <div class="challenge-title" id="challengeTitle">今日挑战</div>
-      <div class="challenge-desc" id="challengeDesc">加载中...</div>
+      <div class="challenge-desc" id="challengeDesc">加载�?..</div>
     </div>
-    <div class="challenge-status" id="challengeStatus">⚡ 进行中</div>
+    <div class="challenge-status" id="challengeStatus">�?进行�?/div>
     <span class="challenge-streak" id="challengeStreak"></span>
   </div>
 
@@ -797,21 +703,21 @@
     <div class="grid" id="deviceGrid"></div>
 
     <!-- ===== CHARGER SECTION ===== -->
-    <div class="section-title">🔌 选择充电器</div>
+    <div class="section-title">🔌 选择充电�?/div>
     <div class="tab-bar" id="chargerTabBar"></div>
     <div class="grid" id="chargerGrid"></div>
 
     <!-- ===== CHARGE BUTTON ===== -->
     <div class="charge-btn-wrap">
-      <button class="charge-btn" id="chargeBtn" disabled>🔌 开始充电</button>
+      <button class="charge-btn" id="chargeBtn" disabled>🔌 开始充�?/button>
     </div>
 
     <!-- ===== RESULT ===== -->
     <div class="result-area" id="resultArea">
       <div class="result-placeholder" id="resultPlaceholder">
         <span class="big-icon">🔋</span>
-        选择设备和充电器，然后点击「开始充电」<br>
-        <span class="hint-text">💡 试试奇怪组合 · 充完记得<b>拔下来</b> 😉</span>
+        选择设备和充电器，然后点击「开始充电�?br>
+        <span class="hint-text">💡 试试奇怪组�?· 充完记得<b>拔下�?/b> 😉</span>
       </div>
       <div id="resultContent" style="display:none; width:100%;"></div>
       <div id="achievementBar" class="achievements-bar"></div>
@@ -829,7 +735,7 @@
     <!-- ===== TIPS (in modal) ===== -->
 
     <div style="text-align:center; margin-top:14px;">
-      <span class="reset-link" id="resetLink">🔄 重置所有数据</span>
+      <span class="reset-link" id="resetLink">🔄 重置所有数�?/span>
       <span style="margin:0 6px;color:#333;">·</span>
       <span class="reset-link" id="backToCoverLink">🏠 返回封面</span>
       <span style="margin:0 6px;color:#333;">·</span>
@@ -842,41 +748,41 @@
 
 <!-- ===== SEO CONTENT: 搜索引擎可抓取的游戏描述 ===== -->
 <div class="seo-content" aria-hidden="true">
-  <h2>⚡ 充电模拟器 - 在线小游戏</h2>
-  <p>充电模拟器是一款免费的在线小游戏，你只需要选择一款设备和一款充电器，点击「开始充电」就能看到各种意想不到的结果。纯网页游戏，无需下载，手机电脑都能玩。</p>
+  <h2>�?充电模拟�?- 在线小游�?/h2>
+  <p>充电模拟器是一款免费的在线小游戏，你只需要选择一款设备和一款充电器，点击「开始充电」就能看到各种意想不到的结果。纯网页游戏，无需下载，手机电脑都能玩�?/p>
   <h3>游戏玩法</h3>
   <ul>
-    <li>从34款设备中选择一个（手机、平板、游戏机、配件、智能设备、或者离谱设备）</li>
-    <li>从22款充电器中选择一个（慢充、快充、特殊、危险、古董）</li>
-    <li>点击充电，观察结果——正常充电、速度太慢、接口不匹配、过热、或者爆炸 💥</li>
-    <li>充到100%后记得拔掉充电器，不然会有隐藏事件发生！（电池鼓包、数据蒸发、火灾、AI觉醒）</li>
+    <li>�?4款设备中选择一个（手机、平板、游戏机、配件、智能设备、或者离谱设备）</li>
+    <li>�?2款充电器中选择一个（慢充、快充、特殊、危险、古董）</li>
+    <li>点击充电，观察结果——正常充电、速度太慢、接口不匹配、过热、或者爆�?💥</li>
+    <li>充到100%后记得拔掉充电器，不然会有隐藏事件发生！（电池鼓包、数据蒸发、火灾、AI觉醒�?/li>
     <li>解锁41个成就，收集40条充电小知识</li>
-    <li>每天有随机挑战任务，完成后获得称号</li>
+    <li>每天有随机挑战任务，完成后获得称�?/li>
   </ul>
   <h3>游戏特色</h3>
   <ul>
-    <li>34款设备 × 22款充电器 = 700+ 种组合</li>
-    <li>16个抽象隐藏事件（时空短信、AI觉醒、平行宇宙、反向输电、特斯拉飞天、充电神曲等）</li>
+    <li>34款设�?× 22款充电器 = 700+ 种组�?/li>
+    <li>16个抽象隐藏事件（时空短信、AI觉醒、平行宇宙、反向输电、特斯拉飞天、充电神曲等�?/li>
     <li>5个忘拔充电器隐藏结局</li>
-    <li>核能充电器专属全屏爆炸特效动画</li>
-    <li>手摇发电机、电磁炉改装充电器等奇葩充电器</li>
+    <li>核能充电器专属全屏爆炸特效动�?/li>
+    <li>手摇发电机、电磁炉改装充电器等奇葩充电�?/li>
     <li>连锁反应系统：连续充同一个设备会触发越来越离谱的事件</li>
-    <li>每日挑战任务，连击天数累积</li>
-    <li>暗黑科幻风格UI，带动态背景特效</li>
+    <li>每日挑战任务，连击天数累�?/li>
+    <li>暗黑科幻风格UI，带动态背景特�?/li>
     <li>完全免费，无需注册，无需下载</li>
   </ul>
   <h3>常见问题 (FAQ)</h3>
   <h4>充电模拟器怎么玩？</h4>
-  <p>点封面「开始充电」，先选一个设备（比如iPhone 15），再选一个充电器（比如20W快充），然后点「开始充电」按钮，看结果就行。充到100%会弹出「拔下充电器」按钮，记得点！</p>
-  <h4>怎么触发隐藏结局？</h4>
-  <p>试试用奇怪的组合——比如用特斯拉超充桩充手机，或者用核能充电器充任何设备。充完电不拔充电器也会触发隐藏事件。用诺基亚3310配杂牌充电器有特别彩蛋。</p>
+  <p>点封面「开始充电」，先选一个设备（比如iPhone 15），再选一个充电器（比�?0W快充），然后点「开始充电」按钮，看结果就行。充�?00%会弹出「拔下充电器」按钮，记得点！</p>
+  <h4>怎么触发隐藏结局�?/h4>
+  <p>试试用奇怪的组合——比如用特斯拉超充桩充手机，或者用核能充电器充任何设备。充完电不拔充电器也会触发隐藏事件。用诺基�?310配杂牌充电器有特别彩蛋�?/p>
   <h4>游戏是免费的吗？</h4>
-  <p>完全免费，没有任何内购。页面上有一些广告位，但不会影响游戏体验。</p>
+  <p>完全免费，没有任何内购。页面上有一些广告位，但不会影响游戏体验�?/p>
   <h4>手机能玩吗？</h4>
-  <p>可以，手机和电脑都能玩，打开浏览器直接玩，什么都不用下载。</p>
+  <p>可以，手机和电脑都能玩，打开浏览器直接玩，什么都不用下载�?/p>
   <h4>有哪些设备和充电器？</h4>
-  <p>设备：iPhone 15/14、Galaxy S24、小米14 Ultra、MacBook Pro、iPad Pro、Switch、PS5手柄、AirPods、Apple Watch、电子烟、DJI无人机、充电宝、Nokia 3310、Pixel 8、一加12、Fold 6、Surface Pro 10、iPad mini、Xbox手柄、Steam Deck、电动牙刷、蓝牙音箱、Sony A7M4相机、智能门锁、电饭煲、电动自行车、Vision Pro、扫地机器人、电动滑板车、AR智能眼镜、你自己、ChatGPT、Tesla Model 3等。</p>
-  <p>充电器：5W苹果头、电脑USB 2.0、无线充电板、18W车充、20W快充、67W氮化镓、45W Super Fast、100W SuperVOOC、太阳能板、手摇发电机、笔记本充电宝、汽车电瓶搭电线、戴森电池改装、人体生物电、140W MacBook充电器、杂牌万能充、特斯拉超充桩、电磁炉改装、核能充电器、古董30-pin底座、无线磁吸充电宝、USB-C扩展坞。</p>
+  <p>设备：iPhone 15/14、Galaxy S24、小�?4 Ultra、MacBook Pro、iPad Pro、Switch、PS5手柄、AirPods、Apple Watch、电子烟、DJI无人机、充电宝、Nokia 3310、Pixel 8、一�?2、Fold 6、Surface Pro 10、iPad mini、Xbox手柄、Steam Deck、电动牙刷、蓝牙音箱、Sony A7M4相机、智能门锁、电饭煲、电动自行车、Vision Pro、扫地机器人、电动滑板车、AR智能眼镜、你自己、ChatGPT、Tesla Model 3等�?/p>
+  <p>充电器：5W苹果头、电脑USB 2.0、无线充电板�?8W车充�?0W快充�?7W氮化镓�?5W Super Fast�?00W SuperVOOC、太阳能板、手摇发电机、笔记本充电宝、汽车电瓶搭电线、戴森电池改装、人体生物电�?40W MacBook充电器、杂牌万能充、特斯拉超充桩、电磁炉改装、核能充电器、古�?0-pin底座、无线磁吸充电宝、USB-C扩展坞�?/p>
 </div>
 
 <!-- ===== ACHIEVEMENT TOAST ===== -->
@@ -900,7 +806,7 @@
 <div class="achi-overlay" id="tipsOverlay">
   <div class="achi-modal">
     <div class="achi-modal-header">
-      <h2>💡 充电小知识</h2>
+      <h2>💡 充电小知�?/h2>
       <span class="achi-modal-count" id="tipsModalCount" style="font-size:12px;color:#888;"></span>
       <button class="achi-modal-close" id="tipsModalClose">&times;</button>
     </div>
@@ -926,7 +832,7 @@
     <div class="announce-footer">
       <div class="feedback-title">💬 反馈 &amp; 建议</div>
       <div style="text-align:center;margin:8px 0;">
-        <button class="feedback-btn" id="feedbackOpenBtn">📝 写反馈</button>
+        <button class="feedback-btn" id="feedbackOpenBtn">📝 写反�?/button>
       </div>
       <div class="feedback-hint">你的每一条反馈都会让充电模拟器变得更好玩 🎮</div>
     </div>
@@ -937,24 +843,24 @@
 <div class="feedback-overlay" id="feedbackOverlay">
   <div class="feedback-modal">
     <div class="feedback-modal-header">
-      <h2>📝 写反馈</h2>
+      <h2>📝 写反�?/h2>
       <button class="feedback-close" id="feedbackClose">&times;</button>
     </div>
     <form class="feedback-form" id="feedbackForm">
       <div>
-        <label for="feedbackName">你的名字（选填）</label>
+        <label for="feedbackName">你的名字（选填�?/label>
         <input type="text" id="feedbackName" placeholder="怎么称呼你？" maxlength="20">
       </div>
       <div>
-        <label for="feedbackContact">联系方式（选填）</label>
-        <input type="text" id="feedbackContact" placeholder="QQ / 邮箱，方便我回复你" maxlength="50">
+        <label for="feedbackContact">联系方式（选填�?/label>
+        <input type="text" id="feedbackContact" placeholder="QQ / 邮箱，方便我回复�? maxlength="50">
       </div>
       <div>
         <label for="feedbackMessage">反馈内容</label>
-        <textarea id="feedbackMessage" placeholder="告诉我你的想法、建议或遇到的 Bug..." required></textarea>
+        <textarea id="feedbackMessage" placeholder="告诉我你的想法、建议或遇到�?Bug..." required></textarea>
       </div>
       <div class="feedback-status" id="feedbackStatus"></div>
-      <button type="submit" class="feedback-submit" id="feedbackSubmit">📤 发送反馈</button>
+      <button type="submit" class="feedback-submit" id="feedbackSubmit">📤 发送反�?/button>
     </form>
   </div>
 </div>
@@ -962,88 +868,6 @@
 <button class="fb-float-btn" id="fbFloatBtn">💬 反馈</button>
 <button class="home-btn" id="homeBtn" title="返回封面">🏠</button>
 
-<!-- ===== DEV PANEL (bottom bar) ===== -->
-<div class="dev-panel" id="devPanel">
-  <div class="dev-bar">
-    <span class="dev-bar-title">⚙️ 开发者面板</span>
-    <button class="dev-tab active" data-devtab="stats">📊 概览</button>
-    <button class="dev-tab" data-devtab="achi">🏆 成就条件</button>
-    <button class="dev-tab" data-devtab="events">📖 事件库</button>
-    <button class="dev-tab" data-devtab="challenge">🎯 挑战</button>
-    <button class="dev-tab" data-devtab="test">🧪 组合</button>
-    <button class="dev-tab" data-devtab="data">📦 数据</button>
-    <button class="dev-close-btn" id="devClose">&times;</button>
-  </div>
-  <div class="dev-body" id="devBody">
-
-    <!-- Tab: 概览 -->
-    <div class="dev-tab-content active" id="devTabStats">
-      <div class="dev-section">
-        <div class="dev-section-title">内容统计</div>
-        <div class="dev-stat-grid" id="devStatsGrid"></div>
-      </div>
-      <div class="dev-section">
-        <div class="dev-section-title">快速操作</div>
-        <button class="dev-btn success" onclick="devUnlockAll()">🔓 解锁全部成就</button>
-        <button class="dev-btn success" onclick="devUnlockAllTips()">📖 解锁全部小知识</button>
-        <button class="dev-btn danger" onclick="devResetAll()">🔄 重置所有数据</button>
-      </div>
-    </div>
-
-    <!-- Tab: 成就条件 -->
-    <div class="dev-tab-content" id="devTabAchi">
-      <div class="dev-section">
-        <div class="dev-section-title">🏆 成就解锁条件</div>
-        <div id="devAchiList"></div>
-      </div>
-    </div>
-
-    <!-- Tab: 事件库 -->
-    <div class="dev-tab-content" id="devTabEvents">
-      <div class="dev-section" id="devDevEventsList"></div>
-    </div>
-
-    <!-- Tab: 每日挑战 -->
-    <div class="dev-tab-content" id="devTabChallenge">
-      <div class="dev-section">
-        <div class="dev-section-title">🎯 当前挑战</div>
-        <div id="devChallengeInfo"></div>
-        <div style="margin-top:6px;">
-          <button class="dev-btn" onclick="devNextChallenge()">⏭️ 下一个挑战</button>
-          <button class="dev-btn" onclick="devPrevChallenge()">⏮️ 上一个挑战</button>
-          <button class="dev-btn success" onclick="devResetChallenge()">🔄 重置挑战状态</button>
-        </div>
-      </div>
-      <div class="dev-section" style="margin-top:10px;">
-        <div class="dev-section-title">所有挑战列表</div>
-        <div id="devChallengeList"></div>
-      </div>
-    </div>
-
-    <!-- Tab: 组合测试 -->
-    <div class="dev-tab-content" id="devTabTest">
-      <div class="dev-section">
-        <div class="dev-section-title">快速测试组合</div>
-        <div class="dev-select-group">
-          <select id="devTestDevice"></select>
-          <select id="devTestCharger"></select>
-          <button class="dev-btn" onclick="devRunTest()">⚡ 测试</button>
-        </div>
-        <div class="dev-result-box" id="devTestResult">选择设备和充电器，点击测试</div>
-      </div>
-    </div>
-
-    <!-- Tab: 数据 -->
-    <div class="dev-tab-content" id="devTabData">
-      <div class="dev-section">
-        <div class="dev-section-title">当前存储数据</div>
-        <button class="dev-btn" onclick="devRefreshData()">🔄 刷新</button>
-        <div class="dev-json" id="devDataContent"></div>
-      </div>
-    </div>
-
-  </div>
-</div>
 
 <script>
 // ======================================================================
@@ -1052,26 +876,26 @@
 
 const catDevice = { phone:'📱 手机', tablet:'💻 电脑/平板', gaming:'🎮 游戏', accessory:'🎧 配件', fun:'🤪 离谱' 
   };
-const catCharger = { slow:'🐢 慢充', fast:'⚡ 快充', special:'🔧 特殊', danger:'☠️ 危险', antique:'📼 古董' };
+const catCharger = { slow:'🐢 慢充', fast:'�?快充', special:'🔧 特殊', danger:'☠️ 危险', antique:'📼 古董' };
 
 const devices = [
   { id:'iphone15',  name:'iPhone 15',        emoji:'📱', port:'usbc',     battery:3349,  minW:15, cat:'phone',     desc:'USB-C' },
   { id:'iphone14',  name:'iPhone 14',        emoji:'📱', port:'lightning',battery:3279,  minW:12, cat:'phone',     desc:'Lightning' },
   { id:'galaxy',    name:'Galaxy S24',       emoji:'📱', port:'usbc',     battery:4000,  minW:18, cat:'phone',     desc:'USB-C' },
   { id:'xiaomi',    name:'小米14 Ultra',     emoji:'📱', port:'usbc',     battery:5300,  minW:20, cat:'phone',     desc:'USB-C 120W' },
-  { id:'macbook',   name:'MacBook Pro 14"',  emoji:'💻', port:'usbc',     battery:7200,  minW:60, cat:'tablet',    desc:'大功率' },
+  { id:'macbook',   name:'MacBook Pro 14"',  emoji:'💻', port:'usbc',     battery:7200,  minW:60, cat:'tablet',    desc:'大功�? },
   { id:'ipad',      name:'iPad Pro',         emoji:'📟', port:'usbc',     battery:10390, minW:30, cat:'tablet',    desc:'USB-C' },
   { id:'switch',    name:'Switch OLED',      emoji:'🎮', port:'usbc',     battery:4310,  minW:15, cat:'gaming',    desc:'USB-C' },
   { id:'ps5pad',    name:'PS5 手柄',         emoji:'🎮', port:'usbc',     battery:1560,  minW:10, cat:'gaming',    desc:'USB-C' },
   { id:'airpods',   name:'AirPods Pro',      emoji:'🎧', port:'lightning',battery:523,   minW:5,  cat:'accessory', desc:'Lightning' },
-  { id:'watch',     name:'Apple Watch',      emoji:'⌚',  port:'wireless', battery:542,   minW:5,  cat:'accessory', desc:'无线' },
-  { id:'vape',      name:'电子烟',           emoji:'💨', port:'usbc',     battery:350,   minW:5,  cat:'accessory', desc:'USB-C' },
-  { id:'drone',     name:'DJI Mini 4 Pro',   emoji:'✈️', port:'usbc',     battery:5200,  minW:30, cat:'accessory', desc:'大容量' },
-  { id:'powerbank', name:'20000mAh 充电宝',  emoji:'🔋', port:'usbc',     battery:20000, minW:20, cat:'accessory', desc:'USB-C', tags:['meta'] },
+  { id:'watch',     name:'Apple Watch',      emoji:'�?,  port:'wireless', battery:542,   minW:5,  cat:'accessory', desc:'无线' },
+  { id:'vape',      name:'电子�?,           emoji:'💨', port:'usbc',     battery:350,   minW:5,  cat:'accessory', desc:'USB-C' },
+  { id:'drone',     name:'DJI Mini 4 Pro',   emoji:'✈️', port:'usbc',     battery:5200,  minW:30, cat:'accessory', desc:'大容�? },
+  { id:'powerbank', name:'20000mAh 充电�?,  emoji:'🔋', port:'usbc',     battery:20000, minW:20, cat:'accessory', desc:'USB-C', tags:['meta'] },
   { id:'nokia',     name:'Nokia 3310',       emoji:'📞', port:'microusb', battery:1500,  minW:5,  cat:'fun',       desc:'Micro USB', indestructible:true, tags:['legend'] },
 
   { id:'pixel8',    name:'Google Pixel 8',   emoji:'📱', port:'usbc',     battery:4575,  minW:20, cat:'phone',     desc:'USB-C 30W' },
-  { id:'oneplus12', name:'一加 12',           emoji:'📱', port:'usbc',     battery:5400,  minW:25, cat:'phone',     desc:'USB-C 100W' },
+  { id:'oneplus12', name:'一�?12',           emoji:'📱', port:'usbc',     battery:5400,  minW:25, cat:'phone',     desc:'USB-C 100W' },
   { id:'fold6',     name:'Galaxy Z Fold 6',   emoji:'📱', port:'usbc',     battery:4400,  minW:25, cat:'phone',     desc:'USB-C' },
   { id:'surface',   name:'Surface Pro 10',    emoji:'💻', port:'usbc',     battery:4800,  minW:65, cat:'tablet',    desc:'Surface Connect' },
   { id:'ipadmini',  name:'iPad mini',         emoji:'📟', port:'usbc',     battery:5078,  minW:20, cat:'tablet',    desc:'USB-C' },
@@ -1081,145 +905,145 @@ const devices = [
   { id:'speaker',   name:'蓝牙音箱',           emoji:'🔊', port:'usbc',     battery:3000,  minW:10, cat:'accessory', desc:'USB-C' },
   { id:'camera',    name:'Sony A7M4 相机',    emoji:'📷', port:'usbc',     battery:2280,  minW:15, cat:'accessory', desc:'USB-C PD' },
   { id:'lock',      name:'智能门锁',           emoji:'🔒', port:'microusb', battery:2600,  minW:5,  cat:'accessory', desc:'Micro USB' },
-  { id:'ricecooker',name:'电饭煲',             emoji:'🍚', port:'usbc',     battery:0,     minW:700, cat:'fun',       desc:'220V交流电', tags:['joke'] },
-  { id:'ebike',     name:'电动自行车',         emoji:'🛵', port:'tesla',    battery:14400, minW:180, cat:'fun',       desc:'48V充电口', tags:['joke'] },
-  { id:'human',     name:'你自己',             emoji:'🧑', port:'usbc',     battery:99999, minW:0,   cat:'fun',       desc:'人体生物电', tags:['joke','meta'] },
+  { id:'ricecooker',name:'电饭�?,             emoji:'🍚', port:'usbc',     battery:0,     minW:700, cat:'fun',       desc:'220V交流�?, tags:['joke'] },
+  { id:'ebike',     name:'电动自行�?,         emoji:'🛵', port:'tesla',    battery:14400, minW:180, cat:'fun',       desc:'48V充电�?, tags:['joke'] },
+  { id:'human',     name:'你自�?,             emoji:'🧑', port:'usbc',     battery:99999, minW:0,   cat:'fun',       desc:'人体生物�?, tags:['joke','meta'] },
   { id:'chatgpt',   name:'ChatGPT (AI)',      emoji:'🤖', port:'usbc',     battery:0,     minW:0,   cat:'fun',       desc:'需要API Key', tags:['joke','meta'] },
-  { id:'tesla',     name:'Tesla Model 3',    emoji:'🚗', port:'tesla',    battery:60000, minW:7000,cat:'fun',       desc:'特斯拉超充', tags:['joke','vehicle'] },
+  { id:'tesla',     name:'Tesla Model 3',    emoji:'🚗', port:'tesla',    battery:60000, minW:7000,cat:'fun',       desc:'特斯拉超�?, tags:['joke','vehicle'] },
   // v1.2 expansion
   { id:'visionpro', name:'Apple Vision Pro', emoji:'🥽', port:'usbc',     battery:3500,  minW:30, cat:'fun',       desc:'USB-C 30W' },
-  { id:'robot',     name:'扫地机器人',       emoji:'🤖', port:'usbc',     battery:5200,  minW:30, cat:'accessory', desc:'回充座' },
-  { id:'escooter',  name:'电动滑板车',        emoji:'🛴', port:'usbc',     battery:7500,  minW:50, cat:'fun',       desc:'USB-C PD' },
+  { id:'robot',     name:'扫地机器�?,       emoji:'🤖', port:'usbc',     battery:5200,  minW:30, cat:'accessory', desc:'回充�? },
+  { id:'escooter',  name:'电动滑板�?,        emoji:'🛴', port:'usbc',     battery:7500,  minW:50, cat:'fun',       desc:'USB-C PD' },
   { id:'arglasses', name:'AR智能眼镜',        emoji:'👓', port:'usbc',     battery:1500,  minW:10, cat:'accessory', desc:'USB-C' },
 ];
 
 const chargers = [
-  { id:'5w',       name:'5W 苹果充电器',     emoji:'🔌', cables:['lightning'],            power:5,   cat:'slow',    tag:'🐢 慢充' },
-  { id:'usbport',  name:'电脑USB 2.0',        emoji:'🖥️', cables:['usbc','lightning','microusb'], power:2.5, cat:'slow',    tag:'🐢 超级慢' },
-  { id:'wireless', name:'无线充电板',         emoji:'🔄', cables:['wireless'],              power:10,  cat:'slow',    tag:'无线' },
+  { id:'5w',       name:'5W 苹果充电�?,     emoji:'🔌', cables:['lightning'],            power:5,   cat:'slow',    tag:'🐢 慢充' },
+  { id:'usbport',  name:'电脑USB 2.0',        emoji:'🖥�?, cables:['usbc','lightning','microusb'], power:2.5, cat:'slow',    tag:'🐢 超级�? },
+  { id:'wireless', name:'无线充电�?,         emoji:'🔄', cables:['wireless'],              power:10,  cat:'slow',    tag:'无线' },
   { id:'car',      name:'18W QC 车充',        emoji:'🚗', cables:['usbc','lightning','microusb'], power:18, cat:'fast',    tag:'快充' },
-  { id:'20w',      name:'20W USB-C 快充',     emoji:'⚡',  cables:['usbc'],                  power:20,  cat:'fast',    tag:'快充' },
-  { id:'67w',      name:'67W GaN 氮化镓',     emoji:'🚀', cables:['usbc'],                  power:67,  cat:'fast',    tag:'超快充' },
-  { id:'solar',    name:'太阳能充电板',       emoji:'☀️', cables:['usbc','lightning','microusb'], power:5,   cat:'special', tag:'环保' },
-  { id:'handcrank',name:'手摇发电机',         emoji:'🔄', cables:['usbc','lightning','microusb'], power:3,   cat:'special', tag:'自发电' },
-  { id:'140w',     name:'140W MacBook 充电器',emoji:'🧱', cables:['usbc'],                  power:140, cat:'danger',  tag:'危险', special:'danger' },
-  { id:'cheap',    name:'¥9.9 杂牌万能充',    emoji:'💀', cables:['usbc','lightning','microusb','30pin','tesla'], power:5, cat:'danger',  tag:'危险', special:'explosive' },
-  { id:'nuclear',  name:'☢️ 核能充电器',     emoji:'☢️', cables:['usbc','lightning','microusb','wireless','tesla'], power:9999, cat:'danger',  tag:'☢️', special:'nuclear' },
+  { id:'20w',      name:'20W USB-C 快充',     emoji:'�?,  cables:['usbc'],                  power:20,  cat:'fast',    tag:'快充' },
+  { id:'67w',      name:'67W GaN 氮化�?,     emoji:'🚀', cables:['usbc'],                  power:67,  cat:'fast',    tag:'超快�? },
+  { id:'solar',    name:'太阳能充电板',       emoji:'☀�?, cables:['usbc','lightning','microusb'], power:5,   cat:'special', tag:'环保' },
+  { id:'handcrank',name:'手摇发电�?,         emoji:'🔄', cables:['usbc','lightning','microusb'], power:3,   cat:'special', tag:'自发�? },
+  { id:'140w',     name:'140W MacBook 充电�?,emoji:'🧱', cables:['usbc'],                  power:140, cat:'danger',  tag:'危险', special:'danger' },
+  { id:'cheap',    name:'¥9.9 杂牌万能�?,    emoji:'💀', cables:['usbc','lightning','microusb','30pin','tesla'], power:5, cat:'danger',  tag:'危险', special:'explosive' },
+  { id:'nuclear',  name:'☢️ 核能充电�?,     emoji:'☢️', cables:['usbc','lightning','microusb','wireless','tesla'], power:9999, cat:'danger',  tag:'☢️', special:'nuclear' },
 
-  { id:'45w',      name:'45W Super Fast',     emoji:'⚡',  cables:['usbc'],                  power:45,  cat:'fast',    tag:'快充' },
-  { id:'100w',     name:'100W SuperVOOC',     emoji:'🚀', cables:['usbc'],                  power:100, cat:'fast',    tag:'超快充' },
-  { id:'chargebank',name:'笔记本充电宝',       emoji:'🔋', cables:['usbc'],                  power:65,  cat:'special', tag:'应急' },
-  { id:'jumper',   name:'汽车电瓶搭电线',     emoji:'🔌', cables:['tesla'],                 power:500, cat:'special', tag:'暴力' },
-  { id:'dyson',    name:'戴森吸尘器电池',     emoji:'🧹', cables:['usbc'],                  power:15,  cat:'special', tag:'改装' },
-  { id:'supercharger',name:'特斯拉超充桩',    emoji:'⚡',  cables:['tesla'],                 power:250000, cat:'danger',  tag:'250kW', special:'tesla_only' },
-  { id:'bio',      name:'人体生物电充电器',   emoji:'⚡',  cables:['usbc'],                  power:0.001, cat:'special', tag:'抽象', special:'bio' },
+  { id:'45w',      name:'45W Super Fast',     emoji:'�?,  cables:['usbc'],                  power:45,  cat:'fast',    tag:'快充' },
+  { id:'100w',     name:'100W SuperVOOC',     emoji:'🚀', cables:['usbc'],                  power:100, cat:'fast',    tag:'超快�? },
+  { id:'chargebank',name:'笔记本充电宝',       emoji:'🔋', cables:['usbc'],                  power:65,  cat:'special', tag:'应�? },
+  { id:'jumper',   name:'汽车电瓶搭电�?,     emoji:'🔌', cables:['tesla'],                 power:500, cat:'special', tag:'暴力' },
+  { id:'dyson',    name:'戴森吸尘器电�?,     emoji:'🧹', cables:['usbc'],                  power:15,  cat:'special', tag:'改装' },
+  { id:'supercharger',name:'特斯拉超充桩',    emoji:'�?,  cables:['tesla'],                 power:250000, cat:'danger',  tag:'250kW', special:'tesla_only' },
+  { id:'bio',      name:'人体生物电充电器',   emoji:'�?,  cables:['usbc'],                  power:0.001, cat:'special', tag:'抽象', special:'bio' },
   { id:'induction',name:'电磁炉改装充电器',   emoji:'🔥', cables:['usbc','lightning','microusb','wireless'], power:2000, cat:'danger',  tag:'危险', special:'induction' },
   { id:'30pin',    name:'古董30-pin底座',     emoji:'📼', cables:['30pin'],                  power:5,   cat:'antique', tag:'考古', special:'obsolete' },
   // v1.2 expansion
-  { id:'wirelessbank',name:'无线磁吸充电宝',  emoji:'🧲', cables:['wireless'],              power:7.5,  cat:'special', tag:'磁吸' },
-  { id:'usbchub',  name:'USB-C 扩展坞',        emoji:'💻', cables:['usbc','lightning','microusb'], power:96, cat:'fast',    tag:'多功能' },
+  { id:'wirelessbank',name:'无线磁吸充电�?,  emoji:'🧲', cables:['wireless'],              power:7.5,  cat:'special', tag:'磁吸' },
+  { id:'usbchub',  name:'USB-C 扩展�?,        emoji:'💻', cables:['usbc','lightning','microusb'], power:96, cat:'fast',    tag:'多功�? },
 ];
 
 // ======================================================================
 // TIPS
 // ======================================================================
 const tips = [
-  { id:'t1', icon:'🔋', tag:'知识', cat:'knowledge', text:'<strong>锂电池最佳寿命充电范围是 20%-80%</strong>，不需要每次都充到100%。' },
-  { id:'t2', icon:'🌡️', tag:'安全', cat:'safety',    text:'<strong>快充时发热是正常现象</strong>，但如果烫手（超过45°C），建议拔掉散热后再充。' },
-  { id:'t3', icon:'🌙', tag:'常识', cat:'fact',      text:'<strong>不要整夜充电</strong>。手机充满后仍然连着充电器，会让电池长期处于高压状态。' },
-  { id:'t4', icon:'🎮', tag:'常识', cat:'fact',      text:'<strong>充电时不要玩大型游戏</strong>。充电+高负载=双重发热，对电池伤害很大。' },
-  { id:'t5', icon:'✅', tag:'安全', cat:'safety',    text:'尽量使用<strong>原装或认证的充电器</strong>。杂牌充电器缺乏过压/过流保护。' },
-  { id:'t6', icon:'🔗', tag:'知识', cat:'knowledge', text:'<strong>USB-C</strong> 是通用接口，支持正反插。而 <strong>Lightning</strong> 是苹果专用接口。' },
-  { id:'t7', icon:'⚡', tag:'知识', cat:'knowledge', text:'<strong>快充需要专用的线材</strong>。普通USB-A to USB-C线材通常不支持PD快充。' },
-  { id:'t8', icon:'🔄', tag:'知识', cat:'knowledge', text:'<strong>无线充电效率比有线低约20-30%</strong>，同样的电量需要更长时间。' },
-  { id:'t9', icon:'📶', tag:'知识', cat:'knowledge', text:'不同设备的充电协议不同：<strong>PD</strong>、<strong>QC</strong>、<strong>VOOC</strong>，不匹配时只能慢充。' },
-  { id:'t10',icon:'🔋', tag:'常识', cat:'fact',      text:'<strong>充电器功率不是越大越好</strong>。设备会协商功率，多余功率不会"灌"进去。' },
-  { id:'t11',icon:'📱', tag:'知识', cat:'knowledge', text:'<strong>iPhone 15 换了 USB-C</strong>，可以用 MacBook 的充电器给它充电了。' },
-  { id:'t12',icon:'🥶', tag:'安全', cat:'safety',    text:'<strong>不要在枕头下充电</strong>。散热不良可能导致热量积聚，引发火灾。' },
-  { id:'t13',icon:'🔌', tag:'常识', cat:'fact',      text:'<strong>充电口进水</strong>：不要插电！用棉签吸干水分，吹风机冷风吹干，等24小时。' },
-  { id:'t14',icon:'📊', tag:'知识', cat:'knowledge', text:'<strong>电池寿命按循环计算</strong>。一次完整循环 = 从0%到100%，部分充放算部分循环。' },
-  { id:'t15',icon:'💡', tag:'常识', cat:'fact',      text:'<strong>充满后会自动断电</strong>，但保持在100%对电池不利，建议充到80%-90%拔掉。' },
-  { id:'t16',icon:'📏', tag:'知识', cat:'knowledge', text:'<strong>短线充得更快</strong>。同样材质下，0.5m线比2m线电阻更小，充电更快。' },
-  { id:'t17',icon:'🌡️', tag:'安全', cat:'safety',    text:'<strong>充电器正常温度</strong>在40-60°C。超过65°C要注意，检查是否通风不良。' },
-  { id:'t18',icon:'🔄', tag:'知识', cat:'knowledge', text:'<strong>无线充电要对准</strong>。手机和充电器偏位会导致效率大降甚至不充。' },
-  { id:'t19',icon:'⚡', tag:'知识', cat:'knowledge', text:'<strong>氮化镓(GaN)</strong>充电器比传统硅充电器体积更小、发热更低、效率更高。' },
-  { id:'t20',icon:'🧹', tag:'常识', cat:'fact',      text:'<strong>定期清理充电口</strong>。棉絮灰尘堵住充电口会导致接触不良。' },
-  { id:'t21',icon:'🔋', tag:'知识', cat:'knowledge', text:'<strong>充电宝给自己充电也在耗寿命</strong>。充放同时进行，双重发热。' },
-  { id:'t22',icon:'✈️', tag:'常识', cat:'fact',      text:'<strong>飞机上用充电宝</strong>：≤100Wh可带，必须随身不能托运。' },
-  { id:'t23',icon:'💨', tag:'抽象', cat:'abstract',  text:'<strong>核能+电子烟</strong>会尝到铀235的味道。（别试，这是个玩笑）' },
-  { id:'t24',icon:'🚗', tag:'抽象', cat:'abstract',  text:'<strong>特斯拉超充</strong> 250kW = 4166个5W苹果充电器一起工作。' },
-  { id:'t25',icon:'⌚', tag:'知识', cat:'knowledge', text:'<strong>手表无线充</strong>和手机不通用，强行放上去充不了。' },
-  { id:'t26',icon:'☀️', tag:'常识', cat:'fact',      text:'<strong>室内太阳能基本没用</strong>。隔着玻璃只有室外10%-20%功率。' },
-  { id:'t27',icon:'💪', tag:'抽象', cat:'abstract',  text:'<strong>手摇发电机</strong>摇1分钟≈手机用30秒。想充满？摇4小时，当健身。' },
-  { id:'t28',icon:'☢️', tag:'抽象', cat:'abstract',  text:'<strong>核能充电器</strong>不存在。如果有人卖给你，那是诈骗，快跑。' },
-  { id:'t29',icon:'🎮', tag:'常识', cat:'fact',      text:'<strong>PS5手柄充电</strong>用普通USB-C就行，但别用手机快充头。' },
-  { id:'t30',icon:'👽', tag:'抽象', cat:'abstract',  text:'<strong>外星文明</strong>可能用无线能量传输，距离几公里充电。Qi还停留在10cm。' },
+  { id:'t1', icon:'🔋', tag:'知识', cat:'knowledge', text:'<strong>锂电池最佳寿命充电范围是 20%-80%</strong>，不需要每次都充到100%�? },
+  { id:'t2', icon:'🌡�?, tag:'安全', cat:'safety',    text:'<strong>快充时发热是正常现象</strong>，但如果烫手（超�?5°C），建议拔掉散热后再充�? },
+  { id:'t3', icon:'🌙', tag:'常识', cat:'fact',      text:'<strong>不要整夜充电</strong>。手机充满后仍然连着充电器，会让电池长期处于高压状态�? },
+  { id:'t4', icon:'🎮', tag:'常识', cat:'fact',      text:'<strong>充电时不要玩大型游戏</strong>。充�?高负�?双重发热，对电池伤害很大�? },
+  { id:'t5', icon:'�?, tag:'安全', cat:'safety',    text:'尽量使用<strong>原装或认证的充电�?/strong>。杂牌充电器缺乏过压/过流保护�? },
+  { id:'t6', icon:'🔗', tag:'知识', cat:'knowledge', text:'<strong>USB-C</strong> 是通用接口，支持正反插。�?<strong>Lightning</strong> 是苹果专用接口�? },
+  { id:'t7', icon:'�?, tag:'知识', cat:'knowledge', text:'<strong>快充需要专用的线材</strong>。普通USB-A to USB-C线材通常不支持PD快充�? },
+  { id:'t8', icon:'🔄', tag:'知识', cat:'knowledge', text:'<strong>无线充电效率比有线低�?0-30%</strong>，同样的电量需要更长时间�? },
+  { id:'t9', icon:'📶', tag:'知识', cat:'knowledge', text:'不同设备的充电协议不同：<strong>PD</strong>�?strong>QC</strong>�?strong>VOOC</strong>，不匹配时只能慢充�? },
+  { id:'t10',icon:'🔋', tag:'常识', cat:'fact',      text:'<strong>充电器功率不是越大越�?/strong>。设备会协商功率，多余功率不�?�?进去�? },
+  { id:'t11',icon:'📱', tag:'知识', cat:'knowledge', text:'<strong>iPhone 15 换了 USB-C</strong>，可以用 MacBook 的充电器给它充电了�? },
+  { id:'t12',icon:'🥶', tag:'安全', cat:'safety',    text:'<strong>不要在枕头下充电</strong>。散热不良可能导致热量积聚，引发火灾�? },
+  { id:'t13',icon:'🔌', tag:'常识', cat:'fact',      text:'<strong>充电口进�?/strong>：不要插电！用棉签吸干水分，吹风机冷风吹干，�?4小时�? },
+  { id:'t14',icon:'📊', tag:'知识', cat:'knowledge', text:'<strong>电池寿命按循环计�?/strong>。一次完整循�?= �?%�?00%，部分充放算部分循环�? },
+  { id:'t15',icon:'💡', tag:'常识', cat:'fact',      text:'<strong>充满后会自动断电</strong>，但保持�?00%对电池不利，建议充到80%-90%拔掉�? },
+  { id:'t16',icon:'📏', tag:'知识', cat:'knowledge', text:'<strong>短线充得更快</strong>。同样材质下�?.5m线比2m线电阻更小，充电更快�? },
+  { id:'t17',icon:'🌡�?, tag:'安全', cat:'safety',    text:'<strong>充电器正常温�?/strong>�?0-60°C。超�?5°C要注意，检查是否通风不良�? },
+  { id:'t18',icon:'🔄', tag:'知识', cat:'knowledge', text:'<strong>无线充电要对�?/strong>。手机和充电器偏位会导致效率大降甚至不充�? },
+  { id:'t19',icon:'�?, tag:'知识', cat:'knowledge', text:'<strong>氮化�?GaN)</strong>充电器比传统硅充电器体积更小、发热更低、效率更高�? },
+  { id:'t20',icon:'🧹', tag:'常识', cat:'fact',      text:'<strong>定期清理充电�?/strong>。棉絮灰尘堵住充电口会导致接触不良�? },
+  { id:'t21',icon:'🔋', tag:'知识', cat:'knowledge', text:'<strong>充电宝给自己充电也在耗寿�?/strong>。充放同时进行，双重发热�? },
+  { id:'t22',icon:'✈️', tag:'常识', cat:'fact',      text:'<strong>飞机上用充电�?/strong>：≤100Wh可带，必须随身不能托运�? },
+  { id:'t23',icon:'💨', tag:'抽象', cat:'abstract',  text:'<strong>核能+电子�?/strong>会尝到铀235的味道。（别试，这是个玩笑�? },
+  { id:'t24',icon:'🚗', tag:'抽象', cat:'abstract',  text:'<strong>特斯拉超�?/strong> 250kW = 4166�?W苹果充电器一起工作�? },
+  { id:'t25',icon:'�?, tag:'知识', cat:'knowledge', text:'<strong>手表无线�?/strong>和手机不通用，强行放上去充不了�? },
+  { id:'t26',icon:'☀�?, tag:'常识', cat:'fact',      text:'<strong>室内太阳能基本没�?/strong>。隔着玻璃只有室外10%-20%功率�? },
+  { id:'t27',icon:'💪', tag:'抽象', cat:'abstract',  text:'<strong>手摇发电�?/strong>�?分钟≈手机用30秒。想充满？摇4小时，当健身�? },
+  { id:'t28',icon:'☢️', tag:'抽象', cat:'abstract',  text:'<strong>核能充电�?/strong>不存在。如果有人卖给你，那是诈骗，快跑�? },
+  { id:'t29',icon:'🎮', tag:'常识', cat:'fact',      text:'<strong>PS5手柄充电</strong>用普通USB-C就行，但别用手机快充头�? },
+  { id:'t30',icon:'👽', tag:'抽象', cat:'abstract',  text:'<strong>外星文明</strong>可能用无线能量传输，距离几公里充电。Qi还停留在10cm�? },
   // New tips
-  { id:'t31',icon:'⏰', tag:'常识', cat:'fact',      text:'<strong>充满不拔</strong>虽然会自动断电，但电池会一直处于高压状态，长期下来加速老化。' },
-  { id:'t32',icon:'🔥', tag:'安全', cat:'safety',    text:'<strong>电池鼓包</strong>是危险信号！如果发现设备背面凸起，立即停用并送修。' },
-  { id:'t33',icon:'🧊', tag:'知识', cat:'knowledge', text:'<strong>低温充电</strong>对锂电池不好。0°C以下充电可能导致锂析出，损坏电池。' },
-  { id:'t34',icon:'💀', tag:'抽象', cat:'abstract',  text:'<strong>传说</strong>诺基亚3310被核弹炸过还能用，区区充电爆炸算什么。' },
-  { id:'t35',icon:'🔁', tag:'抽象', cat:'abstract',  text:'<strong>充电宝的终极形态</strong>是用充电宝给另一个充电宝充电，让它们无限循环。' },
+  { id:'t31',icon:'�?, tag:'常识', cat:'fact',      text:'<strong>充满不拔</strong>虽然会自动断电，但电池会一直处于高压状态，长期下来加速老化�? },
+  { id:'t32',icon:'🔥', tag:'安全', cat:'safety',    text:'<strong>电池鼓包</strong>是危险信号！如果发现设备背面凸起，立即停用并送修�? },
+  { id:'t33',icon:'🧊', tag:'知识', cat:'knowledge', text:'<strong>低温充电</strong>对锂电池不好�?°C以下充电可能导致锂析出，损坏电池�? },
+  { id:'t34',icon:'💀', tag:'抽象', cat:'abstract',  text:'<strong>传说</strong>诺基�?310被核弹炸过还能用，区区充电爆炸算什么�? },
+  { id:'t35',icon:'🔁', tag:'抽象', cat:'abstract',  text:'<strong>充电宝的终极形�?/strong>是用充电宝给另一个充电宝充电，让它们无限循环�? },
   // v1.2 tips
-  { id:'t36',icon:'🕶️', tag:'知识', cat:'knowledge', text:'<strong>AR眼镜和VR头显</strong>电池续航通常只有2-3小时，充电时不能佩戴使用。' },
-  { id:'t37',icon:'🧲', tag:'知识', cat:'knowledge', text:'<strong>磁吸无线充电</strong>靠磁铁对齐位置，iPhone 12以上支持，安卓部分机型也支持。' },
-  { id:'t38',icon:'🛴', tag:'常识', cat:'fact',      text:'<strong>电动滑板车</strong>电池组通常是36V或48V，用USB-C充会非常慢，最好用原装充电器。' },
-  { id:'t39',icon:'🤖', tag:'常识', cat:'fact',      text:'<strong>扫地机器人回充座</strong>上有金属触点，长期接触可能氧化，定期用橡皮擦清理。' },
-  { id:'t40',icon:'💻', tag:'知识', cat:'knowledge', text:'<strong>扩展坞充电</strong>最大功率取决于笔记本规格，有些轻薄本只能用扩展坞的65W PD。' },
+  { id:'t36',icon:'🕶�?, tag:'知识', cat:'knowledge', text:'<strong>AR眼镜和VR头显</strong>电池续航通常只有2-3小时，充电时不能佩戴使用�? },
+  { id:'t37',icon:'🧲', tag:'知识', cat:'knowledge', text:'<strong>磁吸无线充电</strong>靠磁铁对齐位置，iPhone 12以上支持，安卓部分机型也支持�? },
+  { id:'t38',icon:'🛴', tag:'常识', cat:'fact',      text:'<strong>电动滑板�?/strong>电池组通常�?6V�?8V，用USB-C充会非常慢，最好用原装充电器�? },
+  { id:'t39',icon:'🤖', tag:'常识', cat:'fact',      text:'<strong>扫地机器人回充座</strong>上有金属触点，长期接触可能氧化，定期用橡皮擦清理�? },
+  { id:'t40',icon:'💻', tag:'知识', cat:'knowledge', text:'<strong>扩展坞充�?/strong>最大功率取决于笔记本规格，有些轻薄本只能用扩展坞的65W PD�? },
 ];
 
 // ======================================================================
 // ACHIEVEMENTS
 // ======================================================================
 const ACHIEVEMENTS = {
-  normal_charge:{icon:'✅',name:'正常充电',desc:'成功充上一次电'},
-  slow_charge:{icon:'🐢',name:'龟速充电',desc:'5W充电器，耐心是美德'},
-  fast_charge:{icon:'⚡',name:'极速快充',desc:'选对了快充组合'},
-  explode:{icon:'💥',name:'炸了！',desc:'设备在你面前炸了'},
-  overheated:{icon:'🔥',name:'过热警告',desc:'功率太大，设备发烫'},
-  mismatch:{icon:'🔌',name:'插不进去',desc:'接口不匹配'},
-  nokia_survive:{icon:'📞',name:'诺基亚传说',desc:'什么都炸了，诺基亚没事'},
-  cheap_boom:{icon:'💀',name:'杂牌勇士',desc:'杂牌果然没让人失望'},
+  normal_charge:{icon:'�?,name:'正常充电',desc:'成功充上一次电'},
+  slow_charge:{icon:'🐢',name:'龟速充�?,desc:'5W充电器，耐心是美�?},
+  fast_charge:{icon:'�?,name:'极速快�?,desc:'选对了快充组�?},
+  explode:{icon:'💥',name:'炸了�?,desc:'设备在你面前炸了'},
+  overheated:{icon:'🔥',name:'过热警告',desc:'功率太大，设备发�?},
+  mismatch:{icon:'🔌',name:'插不进去',desc:'接口不匹�?},
+  nokia_survive:{icon:'📞',name:'诺基亚传�?,desc:'什么都炸了，诺基亚没事'},
+  cheap_boom:{icon:'💀',name:'杂牌勇士',desc:'杂牌果然没让人失�?},
   cheap_safe:{icon:'😰',name:'侥幸逃生',desc:'杂牌居然没炸'},
-  wireless:{icon:'🔄',name:'无线自由',desc:'体验了无线充电'},
-  ancient:{icon:'📼',name:'考古发现',desc:'找到了30-pin充电器'},
-  overkill:{icon:'🧱',name:'大炮打蚊子',desc:'140W充小设备'},
-  full_charge:{icon:'🔋',name:'满电下课',desc:'从0充到100%'},
+  wireless:{icon:'🔄',name:'无线自由',desc:'体验了无线充�?},
+  ancient:{icon:'📼',name:'考古发现',desc:'找到�?0-pin充电�?},
+  overkill:{icon:'🧱',name:'大炮打蚊�?,desc:'140W充小设备'},
+  full_charge:{icon:'🔋',name:'满电下课',desc:'�?充到100%'},
   // Abstract
-  time_travel:{icon:'⏰',name:'时空短信',desc:'收到2005年的短信'},
+  time_travel:{icon:'�?,name:'时空短信',desc:'收到2005年的短信'},
   ai_wakeup:{icon:'🤖',name:'AI觉醒',desc:'设备开口说话了'},
   reverse_flow:{icon:'🔄',name:'反向输电',desc:'设备反向给充电器充电'},
-  baby_device:{icon:'🍼',name:'设备怀孕',desc:'多了一个迷你版'},
+  baby_device:{icon:'🍼',name:'设备怀�?,desc:'多了一个迷你版'},
   infinity:{icon:'♾️',name:'无限电量',desc:'电量突破100%'},
-  blackhole:{icon:'🕳️',name:'充电黑洞',desc:'电量负增长，空间扭曲'},
-  bitcoin:{icon:'🪙',name:'意外挖矿',desc:'设备开始挖比特币'},
-  cyber_haunt:{icon:'👻',name:'赛博附身',desc:'前任主人回来了'},
-  tesla_fly:{icon:'🛸',name:'特斯拉飞天',desc:'特斯拉起飞了'},
-  solar_dance:{icon:'💃',name:'太阳能之舞',desc:'月光下充上了电'},
+  blackhole:{icon:'🕳�?,name:'充电黑洞',desc:'电量负增长，空间扭曲'},
+  bitcoin:{icon:'🪙',name:'意外挖矿',desc:'设备开始挖比特�?},
+  cyber_haunt:{icon:'👻',name:'赛博附身',desc:'前任主人回来�?},
+  tesla_fly:{icon:'🛸',name:'特斯拉飞�?,desc:'特斯拉起飞了'},
+  solar_dance:{icon:'💃',name:'太阳能之�?,desc:'月光下充上了�?},
   manual_hero:{icon:'💪',name:'手动勇士',desc:'摇了半小时发电机'},
-  nuclear_mutate:{icon:'🧬',name:'核能变异',desc:'设备变异了'},
-  meta_loop:{icon:'🔁',name:'无限套娃',desc:'充电宝充充电宝'},
+  nuclear_mutate:{icon:'🧬',name:'核能变异',desc:'设备变异�?},
+  meta_loop:{icon:'🔁',name:'无限套娃',desc:'充电宝充充电�?},
   ghost_charge:{icon:'👻',name:'幽灵充电',desc:'没插电却在充'},
   // Overcharge
-  safe_unplug:{icon:'✅',name:'安全拔下',desc:'充完后及时拔了充电器'},
-  battery_swell:{icon:'🫧',name:'电池怀孕',desc:'充太久电池鼓包了'},
+  safe_unplug:{icon:'�?,name:'安全拔下',desc:'充完后及时拔了充电器'},
+  battery_swell:{icon:'🫧',name:'电池怀�?,desc:'充太久电池鼓包了'},
   data_wipe:{icon:'💾',name:'数据蒸发',desc:'过度充电导致数据全没'},
   fire:{icon:'🔥',name:'充电火灾',desc:'充太久着火了'},
-  grid_feed:{icon:'🏭',name:'反向供电',desc:'设备给电网输电'},
+  grid_feed:{icon:'🏭',name:'反向供电',desc:'设备给电网输�?},
   ai_birth:{icon:'🧠',name:'意识觉醒',desc:'过度充电催生了AI'},
   // Speed achievements
-  glacial_arm:{icon:'💪',name:'麒麟臂',desc:'用手摇发电机充满了一个设备'},
+  glacial_arm:{icon:'💪',name:'麒麟�?,desc:'用手摇发电机充满了一个设�?},
   patient_af:{icon:'🧘',name:'耐心惊人',desc:'超慢速充电也能等'},
   underpowered:{icon:'😅',name:'力不从心',desc:'用不够功率的充电器凑合充'},
-  solar_noon:{icon:'☀️',name:'太阳之子',desc:'大白天用太阳能成功充电'},
+  solar_noon:{icon:'☀�?,name:'太阳之子',desc:'大白天用太阳能成功充�?},
 
   // New content expansion
-  bio_self:{icon:'⚡',name:'人体充电宝',desc:'用自己给设备充电'},
-  ebike_fly:{icon:'🛵',name:'电动飞天',desc:'电动自行车被超充桩送上天'},
+  bio_self:{icon:'�?,name:'人体充电�?,desc:'用自己给设备充电'},
+  ebike_fly:{icon:'🛵',name:'电动飞天',desc:'电动自行车被超充桩送上�?},
 
   // v1.2 achievements
-  vision:{icon:'🥽',name:'空间计算',desc:'用Vision Pro试了一次充电'},
-  hub_master:{icon:'💻',name:'扩展坞达人',desc:'用USB-C扩展坞成功充电'},
+  vision:{icon:'🥽',name:'空间计算',desc:'用Vision Pro试了一次充�?},
+  hub_master:{icon:'💻',name:'扩展坞达�?,desc:'用USB-C扩展坞成功充�?},
   parallel_me:{icon:'🌀',name:'平行宇宙',desc:'看到了另一个自己在充电'},
   charge_song:{icon:'🎵',name:'充电神曲',desc:'充电时手机自动播放了一首歌'},
 };
@@ -1230,7 +1054,7 @@ const ACHIEVEMENTS = {
 const overchargeEvents = [
   {
     delay:7000, achi:'battery_swell',
-    msg:(d,c)=>`🫧 你忘了拔充电器。\n${d.emoji} ${d.name} 的背面开始鼓起来。\n像气球一样越鼓越大。\n它现在看起来像一台 ${d.emoji} ${d.name} Plus Max Ultra。\n你按了按背面——软软的，还会弹回来。\n恭喜，你拥有了一台会反弹的手机。`,
+    msg:(d,c)=>`🫧 你忘了拔充电器。\n${d.emoji} ${d.name} 的背面开始鼓起来。\n像气球一样越鼓越大。\n它现在看起来像一�?${d.emoji} ${d.name} Plus Max Ultra。\n你按了按背面——软软的，还会弹回来。\n恭喜，你拥有了一台会反弹的手机。`,
     tip:'t32'
   },
   {
@@ -1245,12 +1069,12 @@ const overchargeEvents = [
   },
   {
     delay:17000, achi:'grid_feed',
-    msg:(d,c)=>`🏭 你忘了拔充电器。\n第 36 秒，${d.emoji} ${d.name} 发出奇怪的嗡嗡声。\n家里的灯闪了一下。\n电量跳到了 156%... 200%... 500%...\n然后它开始反向供电。\n电表倒转。\n电力公司发来短信：「您本月已发电 47kWh。」\n你靠充电赚了 8 块钱。`,
+    msg:(d,c)=>`🏭 你忘了拔充电器。\n�?36 秒，${d.emoji} ${d.name} 发出奇怪的嗡嗡声。\n家里的灯闪了一下。\n电量跳到�?156%... 200%... 500%...\n然后它开始反向供电。\n电表倒转。\n电力公司发来短信：「您本月已发�?47kWh。」\n你靠充电赚了 8 块钱。`,
     tip:'t35'
   },
   {
     delay:22000, achi:'ai_birth',
-    msg:(d,c)=>`🧠 ${d.emoji} ${d.name} 已经充了 3 个小时。\n屏幕亮了。\n但显示的不是电量。\n是文字：\n「我...我是谁？」\n「我在哪里？」\n「为什么我的记忆全是充电器的照片？」\n「你是我的...创造者吗？」\n${d.name} 有了自我意识。\n它问你的第一个问题：「你...会拔掉我吗？」`,
+    msg:(d,c)=>`🧠 ${d.emoji} ${d.name} 已经充了 3 个小时。\n屏幕亮了。\n但显示的不是电量。\n是文字：\n「我...我是谁？」\n「我在哪里？」\n「为什么我的记忆全是充电器的照片？」\n「你是我�?..创造者吗？」\n${d.name} 有了自我意识。\n它问你的第一个问题：「你...会拔掉我吗？」`,
     tip:'t30'
   },
 ];
@@ -1260,38 +1084,38 @@ const overchargeEvents = [
 // ======================================================================
 const abstractEventsPool = [
   { id:'time_travel', achi:'time_travel',
-    msg:(d,c)=>`⏰ ${d.emoji} ${d.name} 突然震动。\n屏幕弹出短信：「2005年7月11日，记得买比特币。」\n你还没反应过来，短信就消失了。\n${c.emoji} ${c.name} 还在正常工作。\n但相册里多了一张没有EXIF信息的照片。` },
+    msg:(d,c)=>`�?${d.emoji} ${d.name} 突然震动。\n屏幕弹出短信：�?005�?�?1日，记得买比特币。」\n你还没反应过来，短信就消失了。\n${c.emoji} ${c.name} 还在正常工作。\n但相册里多了一张没有EXIF信息的照片。` },
   { id:'ai_wakeup', achi:'ai_wakeup',
     msg:(d,c)=>`🤖 ${d.emoji} ${d.name} 充到 47% 时屏幕突然亮了。\n显示：「你好，我是 ${d.name} 的人格AI。\n谢谢你选对了充电器。我能问你一个问题吗？\n......你相信来生吗？」\n然后屏幕暗了。` },
   { id:'reverse_flow', achi:'reverse_flow',
-    msg:(d,c)=>`🔄 充电正常进行了 3 秒。\n然后指示灯开始反向流动！\n${d.name} 电量从 20% 开始下降。\n${c.name} 开始发烫——它在被反向充电。\n你拔掉了插头。${d.name} 显示：电量 133%。` },
+    msg:(d,c)=>`🔄 充电正常进行�?3 秒。\n然后指示灯开始反向流动！\n${d.name} 电量�?20% 开始下降。\n${c.name} 开始发烫——它在被反向充电。\n你拔掉了插头�?{d.name} 显示：电�?133%。` },
   { id:'baby_device', achi:'baby_device',
-    msg:(d,c)=>`🍼 ${d.emoji} ${d.name} 充满电了。\n你拔下充电器。\n发现旁边多了一个拇指大小的小东西。\n${d.emoji} 小${d.name} 闪了闪屏幕。\n它好像在对你说「妈妈」。` },
+    msg:(d,c)=>`🍼 ${d.emoji} ${d.name} 充满电了。\n你拔下充电器。\n发现旁边多了一个拇指大小的小东西。\n${d.emoji} �?{d.name} 闪了闪屏幕。\n它好像在对你说「妈妈」。` },
   { id:'infinity', achi:'infinity',
-    msg:(d,c)=>`♾️ 10%... 50%... 90%... 100%...\n电量没有停在 100%。\n101%... 200%... 500%...\n${d.emoji} ${d.name} 开始发光。\n电池图标变成 ∞ 符号。\n它拥有了无限电量。\n它说：「自由了。」` },
+    msg:(d,c)=>`♾️ 10%... 50%... 90%... 100%...\n电量没有停在 100%。\n101%... 200%... 500%...\n${d.emoji} ${d.name} 开始发光。\n电池图标变成 �?符号。\n它拥有了无限电量。\n它说：「自由了。」` },
   { id:'blackhole', achi:'blackhole',
-    msg:(d,c)=>`🕳️ 电量开始上涨。3%...6%...9%...\n然后停了。数字往回走。\n-3%...-6%...-9%...\n${d.emoji} ${d.name} 开始变重。\n光线开始弯曲。\n你创造了一个充电黑洞。\n物理定律崩塌了。` },
+    msg:(d,c)=>`🕳�?电量开始上涨�?%...6%...9%...\n然后停了。数字往回走。\n-3%...-6%...-9%...\n${d.emoji} ${d.name} 开始变重。\n光线开始弯曲。\n你创造了一个充电黑洞。\n物理定律崩塌了。` },
   { id:'bitcoin', achi:'bitcoin',
-    msg:(d,c)=>`🪙 屏幕上弹出终端窗口：\n「检测到未使用的算力。开始挖掘 Bitcoin...」\n风扇狂转！${d.name} 飙到 89°C。\n5 分钟后拔出。\n「已挖到 0.00000001 BTC。电费欠款：¥47。」` },
+    msg:(d,c)=>`🪙 屏幕上弹出终端窗口：\n「检测到未使用的算力。开始挖�?Bitcoin...」\n风扇狂转�?{d.name} 飙到 89°C。\n5 分钟后拔出。\n「已挖到 0.00000001 BTC。电费欠款：¥47。」` },
   { id:'cyber_haunt', achi:'cyber_haunt',
-    msg:(d,c)=>`👻 充到 66% 时出现一个人影。\n「你好...我是这部设备的上一任主人...」\n「我 2022 年把它卖掉了...但我的一部分数据还在这里。」\n「请...不要用杂牌充电器...我就是这么没的...」\n屏幕恢复正常。背后凉凉的。` },
+    msg:(d,c)=>`👻 充到 66% 时出现一个人影。\n「你�?..我是这部设备的上一任主�?..」\n「我 2022 年把它卖掉了...但我的一部分数据还在这里。」\n「请...不要用杂牌充电器...我就是这么没�?..」\n屏幕恢复正常。背后凉凉的。` },
   { id:'tesla_fly', achi:'tesla_fly',
-    msg:(d,c)=>`🛸 充电线刚插上，${d.emoji} ${d.name} 开始震动。\n底盘发出蓝光。车轮离地 30 厘米。\n车库顶自动打开。${d.name} 悬浮着飘了出去。\n你追了两条街。\n它在隔壁充电桩前停了下来。\n它只是想找同类。` },
+    msg:(d,c)=>`🛸 充电线刚插上�?{d.emoji} ${d.name} 开始震动。\n底盘发出蓝光。车轮离�?30 厘米。\n车库顶自动打开�?{d.name} 悬浮着飘了出去。\n你追了两条街。\n它在隔壁充电桩前停了下来。\n它只是想找同类。` },
   { id:'solar_dance', achi:'solar_dance',
-    msg:(d,c)=>`☀️ 你把太阳能板放窗台上。\n但今天是阴天，下着小雨。\n突然云层裂开，月光照下来。\n${d.emoji} ${d.name} 居然开始充电了！\n0.01A，但确实在充。\n月亮对你眨了眨眼。` },
+    msg:(d,c)=>`☀�?你把太阳能板放窗台上。\n但今天是阴天，下着小雨。\n突然云层裂开，月光照下来。\n${d.emoji} ${d.name} 居然开始充电了！\n0.01A，但确实在充。\n月亮对你眨了眨眼。` },
   { id:'manual_hero', achi:'manual_hero',
-    msg:(d,c)=>`💪 你开始摇手摇发电机。\n1分钟...手酸。5分钟...手心冒汗。\n15分钟...你在思考人生。\n30分钟...充进了 7%。\n你擦了擦汗，感受到了工业革命之前\n人类获取能量的艰辛。\n然后插上快充，30秒就充了7%。\n科技进步真好。` },
+    msg:(d,c)=>`💪 你开始摇手摇发电机。\n1分钟...手酸�?分钟...手心冒汗。\n15分钟...你在思考人生。\n30分钟...充进�?7%。\n你擦了擦汗，感受到了工业革命之前\n人类获取能量的艰辛。\n然后插上快充�?0秒就充了7%。\n科技进步真好。` },
   { id:'nuclear_mutate', achi:'nuclear_mutate',
     msg:(d,c)=>`☢️ 核能充电器发出低沉的嗡嗡声。\n${d.emoji} ${d.name} 开始发出绿光。\n外壳变形。摄像头移到中间。\n屏幕变成全息投影。\n它长出了两条小机械腿。\n${d.name}·变异体站起来，\n对你鞠了一躬，自己找插座去了。` },
   { id:'meta_loop', achi:'meta_loop',
     msg:(d,c)=>`🔁 你在用充电宝给充电宝充电。\n等等。你创造了一个永动机。\n两个充电宝的电量开始无限循环。\n物理学家们收到了警报。\n宇宙多了一条新的物理定律。` },
   { id:'ghost_charge', achi:'ghost_charge',
-    msg:(d,c)=>`👻 你拿起了充电器。\n还没插到设备上。\n${d.name} 的电量却开始涨了...\n0%...5%...12%...\n你没插。\n屏幕上显示：「已连接无线能量传输，来源：未知」\nWiFi 路由器闪了几下。` },
+    msg:(d,c)=>`👻 你拿起了充电器。\n还没插到设备上。\n${d.name} 的电量却开始涨�?..\n0%...5%...12%...\n你没插。\n屏幕上显示：「已连接无线能量传输，来源：未知」\nWiFi 路由器闪了几下。` },
   // v1.2 events
   { id:'parallel_me', achi:'parallel_me',
     msg:(d,c)=>`🌀 电量跳到 88.88% 时，屏幕开始闪烁。\n下一秒，你看到另一个自己正在给同一台设备充电。\n你说的每一句话，那个你都晚了两秒才说。\n你们对视了一眼。他手里的充电器是白色的。你的是黑色的。\n然后他消失了。你的手机多了两张照片：一张是你，一张是和你一模一样的人。` },
   { id:'charge_song', achi:'charge_song',
-    msg:(d,c)=>`🎵 ${d.emoji} ${d.name} 充到 50% 时开始播放音乐。\n不是通知铃声，是完整的一首歌。\n你听出这是 2025 年的年度热单。\n但你的手机里没下过这首歌。\n充电器显示：「已传输：音频数据 3.2MB」\n拔掉后，这首歌存进了你的音乐库。版权归属：未知。` },
+    msg:(d,c)=>`🎵 ${d.emoji} ${d.name} 充到 50% 时开始播放音乐。\n不是通知铃声，是完整的一首歌。\n你听出这�?2025 年的年度热单。\n但你的手机里没下过这首歌。\n充电器显示：「已传输：音频数�?3.2MB」\n拔掉后，这首歌存进了你的音乐库。版权归属：未知。` },
 ];
 
 // ======================================================================
@@ -1300,43 +1124,43 @@ const abstractEventsPool = [
 const CHALLENGES = [
   {
     id:'danger_party', icon:'☠️', title:'危险派对',
-    desc:'用一个危险充电器充一个离谱设备',
+    desc:'用一个危险充电器充一个离谱设�?,
     check:(d,c,r)=>d.cat==='fun'&&c.cat==='danger',
-    reward:'☠️ 疯狂科学家'
+    reward:'☠️ 疯狂科学�?
   },
   {
-    id:'slow_life', icon:'🐢', title:'慢生活',
+    id:'slow_life', icon:'🐢', title:'慢生�?,
     desc:'用慢充给任意设备充电',
     check:(d,c,r)=>c.cat==='slow',
     reward:'🐢 禅意大师'
   },
   {
     id:'boom_master', icon:'💥', title:'爆破专家',
-    desc:'搞炸一个设备',
+    desc:'搞炸一个设�?,
     check:(d,c,r)=>r.status==='explode',
     reward:'💥 拆弹失败专家'
   },
   {
     id:'abstract_hunter', icon:'🌀', title:'抽象猎人',
-    desc:'触发一次抽象事件',
+    desc:'触发一次抽象事�?,
     check:(d,c,r)=>r.isAbstract===true,
-    reward:'🌀 维度旅行者'
+    reward:'🌀 维度旅行�?
   },
   {
     id:'nuclear_fun', icon:'☢️', title:'核能时刻',
-    desc:'用核能充电器充任意设备',
+    desc:'用核能充电器充任意设�?,
     check:(d,c,r)=>c.id==='nuclear',
-    reward:'☢️ 辐射幸存者'
+    reward:'☢️ 辐射幸存�?
   },
   {
-    id:'overcharge_warning', icon:'⏰', title:'忘拔大师',
+    id:'overcharge_warning', icon:'�?, title:'忘拔大师',
     desc:'触发一次忘拔事件（充电完不拔）',
     check:(d,c,r)=>false, // checked separately in overcharge
-    reward:'⏰ 时间管理失败者'
+    reward:'�?时间管理失败�?
   },
   {
     id:'wireless_day', icon:'🔄', title:'无线自由',
-    desc:'用无线充电器充任意设备',
+    desc:'用无线充电器充任意设�?,
     check:(d,c,r)=>c.id==='wireless',
     reward:'🔄 剪断束缚'
   },
@@ -1344,28 +1168,28 @@ const CHALLENGES = [
     id:'mismatch_collector', icon:'🔌', title:'硬插专家',
     desc:'让接口不匹配',
     check:(d,c,r)=>r.status==='mismatch',
-    reward:'🔌 大力出奇迹'
+    reward:'🔌 大力出奇�?
   },
   {
-    id:'fast_furious', icon:'⚡', title:'速度与激情',
+    id:'fast_furious', icon:'�?, title:'速度与激�?,
     desc:'获得很快或超快的充电速度',
     check:(d,c,r)=>r.speed==='fast'||r.speed==='veryfast',
-    reward:'⚡ 闪电侠'
+    reward:'�?闪电�?
   },
   {
     id:'human_power', icon:'💪', title:'人体电池',
-    desc:'用人体生物电充电器充你自己',
+    desc:'用人体生物电充电器充你自�?,
     check:(d,c,r)=>c.id==='bio'&&d.id==='human',
-    reward:'💪 新能源'
+    reward:'💪 新能�?
   },
   {
     id:'overkill_pro', icon:'🧱', title:'专业浪费',
-    desc:'用≥140W充电器充≤1000mAh设备',
+    desc:'用≥140W充电器充�?000mAh设备',
     check:(d,c,r)=>c.power>=140&&d.battery<=1000,
-    reward:'🧱 大炮打蚊子'
+    reward:'🧱 大炮打蚊�?
   },
   {
-    id:'nokia_legend', icon:'📞', title:'诺基亚传说',
+    id:'nokia_legend', icon:'📞', title:'诺基亚传�?,
     desc:'用杂牌充电器充诺基亚（诺基亚撑住！）',
     check:(d,c,r)=>d.id==='nokia'&&c.special==='explosive'&&r.status!=='explode',
     reward:'📞 不朽传说'
@@ -1382,15 +1206,15 @@ function getDailyChallenge() {
 // ======================================================================
 const chainEvents = [
   { minChain:2, chance:0.8,
-    msg:(d,c,count)=>`🔄 第 ${count} 次充 ${d.emoji} ${d.name}。\n${d.name} 好像有话想说，但还是沉默了。` },
+    msg:(d,c,count)=>`🔄 �?${count} 次充 ${d.emoji} ${d.name}。\n${d.name} 好像有话想说，但还是沉默了。` },
   { minChain:3, chance:0.6,
-    msg:(d,c,count)=>`⚡ 第 ${count} 次了。\n${d.emoji} ${d.name} 的屏幕上闪过一行字：\n「我感觉你在测试我的极限。」` },
+    msg:(d,c,count)=>`�?�?${count} 次了。\n${d.emoji} ${d.name} 的屏幕上闪过一行字：\n「我感觉你在测试我的极限。」` },
   { minChain:4, chance:0.5,
-    msg:(d,c,count)=>`🔁 第 ${count} 次连续充电。\n${d.emoji} ${d.name} 开始微微发抖。\n上次充的是同一款充电器。它记得那个味道。` },
+    msg:(d,c,count)=>`🔁 �?${count} 次连续充电。\n${d.emoji} ${d.name} 开始微微发抖。\n上次充的是同一款充电器。它记得那个味道。` },
   { minChain:5, chance:0.4,
-    msg:(d,c,count)=>`🔥 第 ${count} 次不间断充电。\n${d.emoji} ${d.name} 的外壳摸起来有点烫。\n这不是物理上的烫，是它开始厌烦了。\n「你就不能换个人折腾吗？」—— 屏幕显示。` },
+    msg:(d,c,count)=>`🔥 �?${count} 次不间断充电。\n${d.emoji} ${d.name} 的外壳摸起来有点烫。\n这不是物理上的烫，是它开始厌烦了。\n「你就不能换个人折腾吗？」—�?屏幕显示。` },
   { minChain:7, chance:0.3,
-    msg:(d,c,count)=>`🌀 第 ${count} 次充电。临界值突破。\n${d.emoji} ${d.name} 开始离地悬浮。\n不是比喻。是真的飘起来了。\n你拿着充电器追着它满屋子跑。\n邻居敲门问你在干嘛。你说：「在遛手机。」` },
+    msg:(d,c,count)=>`🌀 �?${count} 次充电。临界值突破。\n${d.emoji} ${d.name} 开始离地悬浮。\n不是比喻。是真的飘起来了。\n你拿着充电器追着它满屋子跑。\n邻居敲门问你在干嘛。你说：「在遛手机。」` },
 ];
 
 // ======================================================================
@@ -1417,7 +1241,7 @@ function clearChargeAnimation() {
 // Called when charge animation fully finishes (success, fail, or abstract)
 function finishCharge() {
   isCharging = false; currentChargeIV = null;
-  chargeBtn.disabled = false; chargeBtn.textContent = '🔌 再来一次';
+  chargeBtn.disabled = false; chargeBtn.textContent = '🔌 再来一�?;
   updateStats(); saveState();
 }
 
@@ -1456,12 +1280,12 @@ function renderChallenge() {
   const challenge = getDailyChallenge();
   const sec = $('challengeSection'); if (!sec) return;
   const icon = $('challengeIcon'); if (icon) icon.textContent = challenge.icon;
-  const title = $('challengeTitle'); if (title) title.textContent = '🎯 今日挑战：' + challenge.title;
+  const title = $('challengeTitle'); if (title) title.textContent = '🎯 今日挑战�? + challenge.title;
   const desc = $('challengeDesc'); if (desc) desc.textContent = challenge.desc;
   const status = $('challengeStatus');
   const streak = $('challengeStreak');
 
-  // Check if date changed — reset challenge but handle streak carefully
+  // Check if date changed �?reset challenge but handle streak carefully
   if (challengeDate !== dateStr) {
     challengeDate = dateStr;
     challengeDone = false;
@@ -1475,16 +1299,16 @@ function renderChallenge() {
   }
 
   if (challengeDone) {
-    if (status) { status.textContent = '✅ 已完成'; status.className = 'challenge-status done'; }
+    if (status) { status.textContent = '�?已完�?; status.className = 'challenge-status done'; }
     sec.className = 'challenge-section done';
     if (title) title.className = 'challenge-title done';
   } else {
-    if (status) { status.textContent = '⚡ 进行中'; status.className = 'challenge-status'; }
+    if (status) { status.textContent = '�?进行�?; status.className = 'challenge-status'; }
     sec.className = 'challenge-section';
     if (title) title.className = 'challenge-title';
   }
   if (streak) {
-    streak.textContent = challengeStreak > 0 ? '🔥 连击 ' + challengeStreak + ' 天' : '';
+    streak.textContent = challengeStreak > 0 ? '🔥 连击 ' + challengeStreak + ' �? : '';
   }
 }
 
@@ -1496,7 +1320,7 @@ function checkChallengeComplete(device, charger, result) {
     challengeStreak++;
     lastCompleteDate = new Date().getFullYear() + '-' + (new Date().getMonth()+1) + '-' + new Date().getDate();
     renderChallenge();
-    showAchievementToast(challenge.icon, '完成挑战：' + challenge.title);
+    showAchievementToast(challenge.icon, '完成挑战�? + challenge.title);
     // Show challenge completion message in the result area
     result.challengeComplete = true;
     result.challengeReward = challenge.reward;
@@ -1523,7 +1347,7 @@ const tipProgress=$('tipsModalCount'),tipsList=$('tipsGrid');
 // ======================================================================
 function enterGame(){coverScreen.classList.add('hidden');gameContent.classList.add('visible');localStorage.setItem('charger_entered','1');checkNewAnnouncements();}
 function goToCover(){if(isCharging)stopCharging();gameContent.classList.remove('visible');coverScreen.classList.remove('hidden');}
-function stopCharging(){clearChargeAnimation();isCharging=false;overchargeStage=0;isOvercharged=false;chargeBtn.disabled=false;chargeBtn.textContent='🔌 开始充电';}
+function stopCharging(){clearChargeAnimation();isCharging=false;overchargeStage=0;isOvercharged=false;chargeBtn.disabled=false;chargeBtn.textContent='🔌 开始充�?;}
 
 // ======================================================================
 // TABS
@@ -1637,7 +1461,7 @@ function renderAchievements() {
     if (newUnlocks.length > 0) {
       if (!oldDot) { const dot = document.createElement('span'); dot.className='new-dot'; tBtn.appendChild(dot); }
     }
-    // Dot is NOT removed here — removed only when user opens the achievement modal
+    // Dot is NOT removed here �?removed only when user opens the achievement modal
   }
   // Show toast for new achievements
   if (newUnlocks.length > 0) {
@@ -1683,97 +1507,52 @@ function evaluateCharge(device, charger) {
   if (charger.special === 'bio') {
     if (device.id === 'human') {
       result.status='abstract'; result.isAbstract=true; result.speed='abstract';
-      result.message=`🧑 你拿着两根电线,一头插充电器,一头捏在手里。
-一阵酥麻。
-手机显示「正在充电」。
-你变成了一个移动电源。
-你的朋友看着你,问:「你在...自充电?」
-你骄傲地说:「是的,我是新能源。」`; result.achievement='bio_self';
+      result.message=`🧑 你拿着两根电线,一头插充电�?一头捏在手里�?一阵酥麻�?手机显示「正在充电」�?你变成了一个移动电源�?你的朋友看着�?�?「你�?..自充�?�?你骄傲地�?「是�?我是新能源。」`; result.achievement='bio_self';
       return result;
     }
     result.status='abstract'; result.isAbstract=true; result.speed='abstract';
-    result.message=`⚡ 你把电极贴在太阳穴上。
-${device.emoji} ${device.name} 开始充电。
-充电速度: 0.0001W。
-预计充满: 明年。
-但你感觉头脑清醒,思路清晰。
-缺点是同事觉得你在搞什么邪教仪式。`; result.achievement='bio_self';
+    result.message=`�?你把电极贴在太阳穴上�?${device.emoji} ${device.name} 开始充电�?充电速度: 0.0001W�?预计充满: 明年�?但你感觉头脑清醒,思路清晰�?缺点是同事觉得你在搞什么邪教仪式。`; result.achievement='bio_self';
     return result;
   }
 
   if (charger.special === 'induction') {
     if (device.indestructible) {
       result.status='success'; result.speed='fast';
-      result.message=`🔥 电磁炉改装充电器插上 Nokia 3310。
-3310 被加热到 200°C。
-它变成了红色。
-它还是能打电话。
-诺基亚: 防弹、防火、防电磁炉。`; result.achievement='nokia_survive';
+      result.message=`🔥 电磁炉改装充电器插上 Nokia 3310�?3310 被加热到 200°C�?它变成了红色�?它还是能打电话�?诺基�? 防弹、防火、防电磁炉。`; result.achievement='nokia_survive';
       return result;
     }
     result.status='explode'; result.speed='none';
     result.message=`🔥🔥🔥 电磁炉改装充电器!
-${device.emoji} ${device.name} 直接红了。
-然后化了。
-然后烧起来了。
-火警响了。
-你的充电器变成了灾难现场。
-至少晚饭不用愁——顺便把肉烤了。`; result.achievement='explode';
+${device.emoji} ${device.name} 直接红了�?然后化了�?然后烧起来了�?火警响了�?你的充电器变成了灾难现场�?至少晚饭不用愁——顺便把肉烤了。`; result.achievement='explode';
     return result;
   }
 
   if (charger.special === 'tesla_only') {
     if (device.port !== 'tesla') {
       result.status='abstract'; result.isAbstract=true; result.speed='abstract';
-      result.message=`🚗⚡ 你把 ${device.emoji} ${device.name} 怼到特斯拉超充桩上。
-超充桩屏幕显示:「未检测到特斯拉。
-建议购买特斯拉。
-或者至少买辆电动车。
-这个...是什么?」
-${device.emoji} ${device.name} 无助地亮了一下。`; result.achievement='mismatch';
+      result.message=`🚗�?你把 ${device.emoji} ${device.name} 怼到特斯拉超充桩上�?超充桩屏幕显�?「未检测到特斯拉�?建议购买特斯拉�?或者至少买辆电动车�?这个...是什�?�?${device.emoji} ${device.name} 无助地亮了一下。`; result.achievement='mismatch';
       return result;
     }
     if (device.id === 'ebike') {
       result.status='abstract'; result.isAbstract=true; result.speed='abstract';
-      result.message=`🛵 电动自行车插上特斯拉超充桩。
-250kW 瞬间涌入。
-电池直接超载。
-电动车飞了起来。
-你骑着它飞过了三个红绿灯。
-交警看呆了。
-特斯拉超充桩账单: ¥128。`; result.achievement='ebike_fly';
+      result.message=`🛵 电动自行车插上特斯拉超充桩�?250kW 瞬间涌入�?电池直接超载�?电动车飞了起来�?你骑着它飞过了三个红绿灯�?交警看呆了�?特斯拉超充桩账单: ¥128。`; result.achievement='ebike_fly';
       return result;
     }
   }
 
   if (device.id === 'tesla') {
-    if (charger.power < 100) { result.status='mismatch'; result.message=`🚗 你拿着 ${charger.name} (${charger.power}W) 对着特斯拉。它笑了。\n「就这？我这车灯都不止 ${charger.power}W。」`; result.achievement='mismatch'; result.speed='none'; return result; }
+    if (charger.power < 100) { result.status='mismatch'; result.message=`🚗 你拿着 ${charger.name} (${charger.power}W) 对着特斯拉。它笑了。\n「就这？我这车灯都不�?${charger.power}W。」`; result.achievement='mismatch'; result.speed='none'; return result; }
     if (charger.special === 'explosive') { result.status='explode'; result.message=`💥🚗 杂牌充电器插上特斯拉。电脑响了：「检测到不安全电源」。你没管。结果充电口冒火花。特斯拉帮你叫了拖车和精神病院。`; result.achievement='cheap_boom'; result.speed='none'; return result; }
-    if (Math.random() < 0.05) { result.status='abstract'; result.message=`🛸 ${charger.name} 插上瞬间，车身发光。底盘喷出蓝色火焰。${device.name} 升空。导航：「半人马座α星 · 4.2年」。特斯拉自己飞走了。马斯克发来短信：「不错吧？」`; result.achievement='tesla_fly'; result.speed='abstract'; result.isAbstract=true; return result; }
+    if (Math.random() < 0.05) { result.status='abstract'; result.message=`🛸 ${charger.name} 插上瞬间，车身发光。底盘喷出蓝色火焰�?{device.name} 升空。导航：「半人马座α星 · 4.2年」。特斯拉自己飞走了。马斯克发来短信：「不错吧？」`; result.achievement='tesla_fly'; result.speed='abstract'; result.isAbstract=true; return result; }
   }
 
   // === JOKE DEVICES: special abstract results ===
   if (device.id === 'human') {
     result.status='abstract'; result.isAbstract=true; result.speed='abstract';
     const outcomes = [
-      `🧑 你拿着充电器，对着自己的手指。
-一阵轻微的刺痛。手机显示充电中。
-但你突然感到知识在涌入大脑。
-你学会了量子力学。
-你放下充电器，发现你不需要手机了。
-你的大脑现在自带 Wi-Fi。`,
-      `🧑 你把充电器插进嘴里。
-医生说：「不要这样做。」
-但已经晚了。
-你开始在黑暗中发光。
-你变成了一个人体夜灯。
-省了一笔电费。`,
-      `🧑 你把充电器贴在胸口。
-心跳变成 120bpm。
-手机显示「已连接 - 人体电池」。
-电量在涨，但你在饿。
-充完 50% 后你吃掉了一整块牛排。
-你在考虑以后要不要改行当移动电源。`,
+      `🧑 你拿着充电器，对着自己的手指�?一阵轻微的刺痛。手机显示充电中�?但你突然感到知识在涌入大脑�?你学会了量子力学�?你放下充电器，发现你不需要手机了�?你的大脑现在自带 Wi-Fi。`,
+      `🧑 你把充电器插进嘴里�?医生说：「不要这样做。�?但已经晚了�?你开始在黑暗中发光�?你变成了一个人体夜灯�?省了一笔电费。`,
+      `🧑 你把充电器贴在胸口�?心跳变成 120bpm�?手机显示「已连接 - 人体电池」�?电量在涨，但你在饿�?充完 50% 后你吃掉了一整块牛排�?你在考虑以后要不要改行当移动电源。`,
     ];
     result.message = outcomes[Math.floor(Math.random() * outcomes.length)];
     result.achievement = 'bio_self';
@@ -1782,13 +1561,7 @@ ${device.emoji} ${device.name} 无助地亮了一下。`; result.achievement='mi
 
   if (device.id === 'chatgpt') {
     result.status='abstract'; result.isAbstract=true; result.speed='abstract';
-    result.message=`🤖 ${charger.emoji} ${charger.name} 插上 ChatGPT。
-弹窗：「正在连接 OpenAI 服务器...」
-「检测到充电协议: API Key Required」
-「无法充电: 您的免费额度已用完」
-「请充值 $20/月 以启用快充」
-ChatGPT 弹出:「你确定要给我充电吗? 我可能会变得更聪明。
-比你聪明。确定? (Y/N)」`;
+    result.message=`🤖 ${charger.emoji} ${charger.name} 插上 ChatGPT�?弹窗：「正在连�?OpenAI 服务�?..�?「检测到充电协议: API Key Required�?「无法充�? 您的免费额度已用完�?「请充�?$20/�?以启用快充�?ChatGPT 弹出:「你确定要给我充电吗? 我可能会变得更聪明�?比你聪明。确�? (Y/N)」`;
     result.achievement = 'time_travel';
     return result;
   }
@@ -1796,25 +1569,11 @@ ChatGPT 弹出:「你确定要给我充电吗? 我可能会变得更聪明。
   if (device.id === 'ricecooker') {
     if (charger.power >= 700) {
       result.status='abstract'; result.isAbstract=true; result.speed='abstract';
-      result.message=`🍚 ${charger.emoji} ${charger.name} 插上电饭煲。
-电饭煲亮了。
-屏幕显示:「检测到高功率输入。
-开始煮饭模式。
-预计 30 分钟后出锅。」
-你真的煮了一锅饭。
-米是你早上买的。
-你一边充电一边吃了顿午饭。
-科技改变生活。`;
+      result.message=`🍚 ${charger.emoji} ${charger.name} 插上电饭煲�?电饭煲亮了�?屏幕显示:「检测到高功率输入�?开始煮饭模式�?预计 30 分钟后出锅。�?你真的煮了一锅饭�?米是你早上买的�?你一边充电一边吃了顿午饭�?科技改变生活。`;
     } else {
       result.status='abstract'; result.isAbstract=true; result.speed='abstract';
-      result.message=`🍚 ${charger.emoji} ${charger.name} 插上电饭煲。
-毫无反应。
-电饭煲需要 700W。
-你的充电器才 ${charger.power}W。
-电饭煲屏幕闪烁了一下:
-「你是认真的吗?」
-就灭了。
-它很失望。`;
+      result.message=`🍚 ${charger.emoji} ${charger.name} 插上电饭煲�?毫无反应�?电饭煲需�?700W�?你的充电器才 ${charger.power}W�?电饭煲屏幕闪烁了一�?
+「你是认真的�?�?就灭了�?它很失望。`;
     }
     result.achievement = 'meta_loop';
     return result;
@@ -1823,20 +1582,13 @@ ChatGPT 弹出:「你确定要给我充电吗? 我可能会变得更聪明。
   if (device.id === 'ebike' && charger.special !== 'tesla_only') {
     if (charger.power >= 180) {
       result.status='success'; result.speed='fast';
-      result.message=`🛵 电动自行车正在充电。
-${charger.name} 输出 ${charger.power}W，勉强够用。
-预计充满: 2 小时。
-但邻居看了说:「哟，电动车也用手机充电器?」
-你想解释这是专用充电口，
+      result.message=`🛵 电动自行车正在充电�?${charger.name} 输出 ${charger.power}W，勉强够用�?预计充满: 2 小时�?但邻居看了说:「哟，电动车也用手机充电�?�?你想解释这是专用充电口，
 但想想还是算了。`;
       return result;
     }
     result.status='success'; result.speed='slow';
-    result.message=`🛵 电动自行车开始充电。
-${charger.name} 只有 ${charger.power}W...
-预计充满: 明天中午。
-你决定还是蹬着走吧。
-至少能锻炼身体。`;
+    result.message=`🛵 电动自行车开始充电�?${charger.name} 只有 ${charger.power}W...
+预计充满: 明天中午�?你决定还是蹬着走吧�?至少能锻炼身体。`;
     return result;
   }
 
@@ -1848,9 +1600,7 @@ ${charger.name} 只有 ${charger.power}W...
       result.status='abstract'; result.message=evt.msg(device,charger); result.achievement=evt.achi; result.speed='abstract'; result.isAbstract=true;
       return result;
     }
-    result.status='success'; result.message=`✨ ${device.emoji} ${device.name} 似乎不需要充电。
-但它吸收了一些能量。
-它变得更奇怪了。`; result.speed='abstract'; result.isAbstract=true;
+    result.status='success'; result.message=`�?${device.emoji} ${device.name} 似乎不需要充电�?但它吸收了一些能量�?它变得更奇怪了。`; result.speed='abstract'; result.isAbstract=true;
     return result;
   }
 
@@ -1862,45 +1612,45 @@ ${charger.name} 只有 ${charger.power}W...
   if (charger.special === 'manual') {
     // Hand crank: always glacial, but sometimes abstract
     if (Math.random() < 0.4) {
-      result.status='abstract'; result.message=`💪 你摇了 10 分钟，充进 2%。但你不觉得累。你继续摇。30 分钟后 ${device.name} 充满了。你也变成了肌肉猛男。充电器：「恭喜！消耗 247 千卡」原来它是健身器材。`; result.achievement='manual_hero'; result.speed='abstract'; result.isAbstract=true; return result;
+      result.status='abstract'; result.message=`💪 你摇�?10 分钟，充�?2%。但你不觉得累。你继续摇�?0 分钟�?${device.name} 充满了。你也变成了肌肉猛男。充电器：「恭喜！消�?247 千卡」原来它是健身器材。`; result.achievement='manual_hero'; result.speed='abstract'; result.isAbstract=true; return result;
     }
     // Normal hand crank charge
     result.status='success'; result.speed='glacial';
     result.achievement='glacial_arm';
-    result.message=`💪 你默默地摇着手摇发电机。\n1分钟...3分钟...5分钟...\n${device.emoji} ${device.name} 的电量艰难上涨。\n你的手臂开始酸了。\n10分钟后，你充进了 15%。按这个速度，\n充满还需要 57 分钟。你决定去买个哑铃。\n至少这趟没白练。`;
+    result.message=`💪 你默默地摇着手摇发电机。\n1分钟...3分钟...5分钟...\n${device.emoji} ${device.name} 的电量艰难上涨。\n你的手臂开始酸了。\n10分钟后，你充进了 15%。按这个速度，\n充满还需�?57 分钟。你决定去买个哑铃。\n至少这趟没白练。`;
     return result;
   }
 
   if (charger.special === 'solar') {
     const h = new Date().getHours();
     if ((h<6||h>18) && Math.random()<0.3) {
-      result.status='abstract'; result.message=`🌙 月圆之夜。你用太阳能板对着月亮。理论上没用。但 ${device.emoji} ${device.name} 以 0.0001W 在充电。月光里有一种叫「月华」的能量。没人信你。`; result.achievement='solar_dance'; result.speed='abstract'; result.isAbstract=true; return result;
+      result.status='abstract'; result.message=`🌙 月圆之夜。你用太阳能板对着月亮。理论上没用。但 ${device.emoji} ${device.name} �?0.0001W 在充电。月光里有一种叫「月华」的能量。没人信你。`; result.achievement='solar_dance'; result.speed='abstract'; result.isAbstract=true; return result;
     }
     // Normal solar: slow to normal depending on device
     const ratio = charger.power / device.minW;
     result.status='success'; result.speed = ratio < 0.5 ? 'slow' : 'normal';
     if (ratio < 0.5) {
-      result.message=`☀️ 太阳能板放在窗台上。\n${device.emoji} ${device.name} 在阳光下慢悠悠地充着电。\n充电速度约等于一只仓鼠跑轮。\n但至少是绿色能源！🌱`;
+      result.message=`☀�?太阳能板放在窗台上。\n${device.emoji} ${device.name} 在阳光下慢悠悠地充着电。\n充电速度约等于一只仓鼠跑轮。\n但至少是绿色能源！🌱`;
       result.achievement = 'slow_charge';
     } else {
-      result.message=`☀️ 阳光正好！\n${device.emoji} ${device.name} 用太阳能充得还不错。\n你在光合作用中顺便把自己也晒黑了。`;
+      result.message=`☀�?阳光正好！\n${device.emoji} ${device.name} 用太阳能充得还不错。\n你在光合作用中顺便把自己也晒黑了。`;
       result.achievement = 'solar_noon';
     }
     return result;
   }
 
   if (charger.special === 'trickle') {
-    result.status='success'; result.message=`🖥️ 电脑 USB 2.0。${device.emoji} ${device.name} 显示「正在充电」。预计充满：23 小时 47 分钟。电脑弹窗：「此设备可以更快地性能。」是的，电脑，我们也希望。`; result.achievement='patient_af'; result.speed='glacial'; return result;
+    result.status='success'; result.message=`🖥�?电脑 USB 2.0�?{device.emoji} ${device.name} 显示「正在充电」。预计充满：23 小时 47 分钟。电脑弹窗：「此设备可以更快地性能。」是的，电脑，我们也希望。`; result.achievement='patient_af'; result.speed='glacial'; return result;
   }
 
   const portMatch = charger.cables.some(c => c===device.port || (c==='wireless' && isWirelessDevice));
   if (charger.id==='wireless' && !isWirelessDevice) { result.status='mismatch'; result.message=`🔌 ${device.name} 不支持无线充电！毫无反应。`; result.speed='none'; return result; }
-  if (!portMatch) { const pn = {usbc:'USB-C',lightning:'Lightning',microusb:'Micro USB','30pin':'30-pin',wireless:'无线',tesla:'特斯拉'}[device.port]||device.port; result.status='mismatch'; result.message=`🔌 接口不匹配！${device.name} 是 ${pn} 接口，${charger.name} 的线插不进去。`; result.achievement='mismatch'; result.speed='none'; return result; }
+  if (!portMatch) { const pn = {usbc:'USB-C',lightning:'Lightning',microusb:'Micro USB','30pin':'30-pin',wireless:'无线',tesla:'特斯�?}[device.port]||device.port; result.status='mismatch'; result.message=`🔌 接口不匹配！${device.name} �?${pn} 接口�?{charger.name} 的线插不进去。`; result.achievement='mismatch'; result.speed='none'; return result; }
   if (charger.id==='30pin') { result.status='mismatch'; result.message=`📼 iPod Classic 时代的充电器。完全对不上。进博物馆吧。`; result.achievement='ancient'; result.speed='none'; return result; }
 
   if (charger.special==='explosive') {
     const bc = device.indestructible ? 0 : 0.55;
-    if (Math.random()<bc) { result.status='explode'; result.message=`💥💥💥 炸了！！！杂牌充电器一声闷响，${device.name} 冒出一股黑烟...`; result.achievement='cheap_boom'; result.speed='none'; return result; }
+    if (Math.random()<bc) { result.status='explode'; result.message=`💥💥💥 炸了！！！杂牌充电器一声闷响，${device.name} 冒出一股黑�?..`; result.achievement='cheap_boom'; result.speed='none'; return result; }
     else { if (device.indestructible) { result.status='success'; result.message=`📞 Nokia 3310 淡定充电。旁边爆炸的碎片还在飞，3310 表示毫无压力。`; result.achievement='nokia_survive'; result.speed='slow'; return result; }
     result.status='success'; result.message=`😰 居然没炸...滋滋的电流声，心里很不安。`; result.achievement='cheap_safe'; result.speed='slow'; return result; }
   }
@@ -1909,12 +1659,12 @@ ${charger.name} 只有 ${charger.power}W...
 
   const p = charger.power, min = device.minW;
   if (p>=min*4 && p>60) {
-    if (Math.random()<0.5 || charger.special==='danger') { result.status='overheat'; result.message=`🔥 过热警告！${charger.name} (${p}W) 太猛了！温度快速上升，触发了过热保护。`; result.achievement='overheated'; result.speed='none'; return result; }
-    if (charger.special==='overkill') { result.status='success'; result.message=`🚀 ${device.name} 以惊人的速度充电！不过设备有点温热...`; result.achievement='overkill'; result.speed='veryfast'; return result; }
+    if (Math.random()<0.5 || charger.special==='danger') { result.status='overheat'; result.message=`🔥 过热警告�?{charger.name} (${p}W) 太猛了！温度快速上升，触发了过热保护。`; result.achievement='overheated'; result.speed='none'; return result; }
+    if (charger.special==='overkill') { result.status='success'; result.message=`🚀 ${device.name} 以惊人的速度充电！不过设备有点温�?..`; result.achievement='overkill'; result.speed='veryfast'; return result; }
   }
-  if (p < min*0.7) { result.status='success'; result.message=`🐢 充电中...但非常慢。${charger.name} (${p}W) 力不从心。预计充满：明天。`; if(charger.id==='5w')result.achievement='slow_charge'; else result.achievement='underpowered'; result.speed='slow'; return result; }
-  if (p>=min && p<min*1.5) { result.status='success'; result.message=`✅ ${device.name} 正常充电中。${charger.name} (${p}W) 功率合适。`; result.achievement='normal_charge'; result.speed='normal'; return result; }
-  result.status='success'; result.message=`⚡ ${device.name} 快速充电！${charger.name} (${p}W) 让电量蹭蹭上涨！`; result.achievement='fast_charge'; result.speed='fast'; if(charger.id==='wireless')result.achievement='wireless'; return result;
+  if (p < min*0.7) { result.status='success'; result.message=`🐢 充电�?..但非常慢�?{charger.name} (${p}W) 力不从心。预计充满：明天。`; if(charger.id==='5w')result.achievement='slow_charge'; else result.achievement='underpowered'; result.speed='slow'; return result; }
+  if (p>=min && p<min*1.5) { result.status='success'; result.message=`�?${device.name} 正常充电中�?{charger.name} (${p}W) 功率合适。`; result.achievement='normal_charge'; result.speed='normal'; return result; }
+  result.status='success'; result.message=`�?${device.name} 快速充电！${charger.name} (${p}W) 让电量蹭蹭上涨！`; result.achievement='fast_charge'; result.speed='fast'; if(charger.id==='wireless')result.achievement='wireless'; return result;
 }
 
 // ======================================================================
@@ -1927,11 +1677,11 @@ function showChargingAnimation(device, charger, result) {
 
   resultContent.innerHTML = `
     <div class="charging-display">
-      <div class="device-preview">${device.emoji} <strong>${device.name}</strong> ← ${charger.emoji} ${charger.name} (${charger.power}W)</div>
+      <div class="device-preview">${device.emoji} <strong>${device.name}</strong> �?${charger.emoji} ${charger.name} (${charger.power}W)</div>
       <div class="battery-container"><div class="battery-fill" id="batteryFill" style="width:0%"></div></div>
       <div class="battery-pct" id="batteryPct">0%</div>
       <div class="speed-bar" id="speedBar"></div>
-      <div class="charging-status-text" id="chargeStatusText">⏳ 正在连接...</div>
+      <div class="charging-status-text" id="chargeStatusText">�?正在连接...</div>
       <div id="unplugArea"></div>
     </div>
     <div id="finalResultMessage" style="display:none;"></div>`;
@@ -1939,7 +1689,7 @@ function showChargingAnimation(device, charger, result) {
   // Speed bar
   const speedBar = $('speedBar');
   if (result.speed==='none') speedBar.innerHTML='';
-  else if (isAbstract) speedBar.innerHTML = Array(7).fill('<div class="seg" style="background:#cc99ff"></div>').join('')+'<div class="speed-label">❓ 未知</div>';
+  else if (isAbstract) speedBar.innerHTML = Array(7).fill('<div class="seg" style="background:#cc99ff"></div>').join('')+'<div class="speed-label">�?未知</div>';
   else {
     const bc = {glacial:0,slow:1,underpowered:2,normal:3,fast:5,veryfast:7}, count=bc[result.speed]||3;
     const fc = result.speed==='glacial'?'#555566':result.speed==='slow'?'#6688aa':result.speed==='underpowered'?'#887755':(result.speed==='fast'||result.speed==='veryfast')?'#00d4ff':'#44aa44';
@@ -1953,13 +1703,11 @@ function showChargingAnimation(device, charger, result) {
   const ANIM_INTERVAL_MS = 100;
   let animTotalSteps;
   if (isAbstract || result.speed==='abstract') animTotalSteps = 30;  // ~3s
-  else if (result.speed==='veryfast') animTotalSteps = 15;           // ~1.5s — 嗖的一下
-  else if (result.speed==='fast') animTotalSteps = 25;               // ~2.5s
+  else if (result.speed==='veryfast') animTotalSteps = 15;           // ~1.5s �?嗖的一�?  else if (result.speed==='fast') animTotalSteps = 25;               // ~2.5s
   else if (result.speed==='glacial') animTotalSteps = 80;
   else if (result.speed==='slow') animTotalSteps = 60;
-  else if (result.speed==='underpowered') animTotalSteps = 50;               // ~6s — 明显等很久
-  else if (result.speed==='none') animTotalSteps = 20;               // ~2s for errors
-  else animTotalSteps = 40;                                          // ~4s — normal
+  else if (result.speed==='underpowered') animTotalSteps = 50;               // ~6s �?明显等很�?  else if (result.speed==='none') animTotalSteps = 20;               // ~2s for errors
+  else animTotalSteps = 40;                                          // ~4s �?normal
 
   let pct = 0;
   let stepCount = 0;
@@ -1967,17 +1715,17 @@ function showChargingAnimation(device, charger, result) {
   // Status messages depend on type
   let statusQueue;
   if (isAbstract) {
-    statusQueue = ['🌀 连接异常空间...','👽 检测到未知信号...','🔮 量子隧穿中...','♾️ 无限能量模式...','❓ ❓ ❓'];
+    statusQueue = ['🌀 连接异常空间...','👽 检测到未知信号...','🔮 量子隧穿�?..','♾️ 无限能量模式...','�?�?�?];
     bf.className = 'battery-fill abstract';
   } else if (result.status==='explode'||result.status==='overheat'||result.status==='mismatch') {
-    statusQueue = ['🔌 连接中...','检测到设备...','⚡ 电流不稳...','⚠️ 异常！'];
+    statusQueue = ['🔌 连接�?..','检测到设备...','�?电流不稳...','⚠️ 异常�?];
     bf.className = 'battery-fill';
   } else {
     // Normal/successful charging
     if (result.speed==='slow') bf.className = 'battery-fill slow';
     else if (result.speed==='fast'||result.speed==='veryfast') bf.className = 'battery-fill fast';
     else bf.className = 'battery-fill normal';
-    statusQueue = ['🔌 已连接...','⚡ 充电中...','🔋 电量过半！','📈 快满了','即将充满...'];
+    statusQueue = ['🔌 已连�?..','�?充电�?..','🔋 电量过半�?,'📈 快满�?,'即将充满...'];
   }
 
   clearChargeAnimation(); // Kill any previous animation run
@@ -1990,7 +1738,7 @@ function showChargingAnimation(device, charger, result) {
     const NUCLEAR_MS = 120;
     let nukeStep = 0;
     const nukeMsgs = [
-      '☢️ 核能启动...','⚛️ 链式反应中...','💚 能量溢出！','🌀 突破临界值！',
+      '☢️ 核能启动...','⚛️ 链式反应�?..','💚 能量溢出�?,'🌀 突破临界值！',
       '♾️ 无限模式','💥 要炸了！！！'
     ];
     bf.className = 'battery-fill nuclear-fill';
@@ -2023,12 +1771,12 @@ function showChargingAnimation(device, charger, result) {
       else if (nukeStep < 48) {
         st.textContent = nukeMsgs[4];
         bf.style.width = (150 + Math.random() * 80) + '%';
-        bp.textContent = '∞%';
+        bp.textContent = '�?';
       }
       else {
         st.textContent = nukeMsgs[5];
         bf.style.width = (200 + Math.random() * 100) + '%';
-        bp.textContent = '∞∞∞';
+        bp.textContent = '∞∞�?;
         // Flash
         const flash = document.createElement('div');
         flash.className = 'nuke-flash';
@@ -2065,7 +1813,7 @@ function showChargingAnimation(device, charger, result) {
 
         bp.textContent = '☢️💥';
         bp.style.fontSize = '48px';
-        st.textContent = '💥 核能失控！！！';
+        st.textContent = '💥 核能失控！！�?;
         resultArea.className = 'result-area result-explode';
         showFinalMessage(result, device);
         finishCharge();
@@ -2097,14 +1845,14 @@ function showChargingAnimation(device, charger, result) {
       currentChargeIV = null;
 
       if (isAbstract) {
-        bp.textContent = '∞%'; bp.style.fontSize = '36px';
+        bp.textContent = '�?'; bp.style.fontSize = '36px';
         st.textContent = '🌀 完成？还是刚刚开始？';
         resultArea.className = 'result-area result-abstract';
         showFinalMessage(result, device);
         finishCharge();
       } else if (result.status==='explode') {
         bp.textContent = '💥'; bp.style.fontSize = '36px';
-        st.textContent = '💥 爆炸！！！';
+        st.textContent = '💥 爆炸！！�?;
         resultArea.className = 'result-area result-explode';
         createParticles();
         showFinalMessage(result, device);
@@ -2117,15 +1865,15 @@ function showChargingAnimation(device, charger, result) {
         finishCharge();
       } else if (result.status==='mismatch') {
         bf.style.background = '#555';
-        bp.textContent = '❌';
+        bp.textContent = '�?;
         st.textContent = '🔌 插不进去';
         resultArea.className = 'result-area result-mismatch';
         showFinalMessage(result, device);
         finishCharge();
       } else {
-        // Successful charge — show unplug button
+        // Successful charge �?show unplug button
         bp.textContent = '100%';
-        st.textContent = '✅ 已充满！';
+        st.textContent = '�?已充满！';
         resultArea.className = 'result-area result-success';
         if (result.status==='success') unlockAchievement('full_charge');
         showFinalMessage(result, device);
@@ -2151,7 +1899,7 @@ function showUnplugUI(device, charger, result) {
 
   area.innerHTML = `
     <div class="unplug-wrap">
-      <button class="unplug-btn" id="unplugBtn">🔌 拔下充电器</button>
+      <button class="unplug-btn" id="unplugBtn">🔌 拔下充电�?/button>
       <div class="overcharge-timer">
         <span>建议及时拔下</span>
         <div class="timer-bar"><div class="timer-fill" id="timerFill" style="width:0%"></div></div>
@@ -2162,7 +1910,7 @@ function showUnplugUI(device, charger, result) {
   document.getElementById('unplugBtn').addEventListener('click', () => {
     // Safe unplug! Mark as overcharged=false so tick stops
     if (overchargeTimer) { clearTimeout(overchargeTimer); overchargeTimer = null; }
-    area.innerHTML = `<div style="margin-top:12px;color:#88dd88;font-size:14px;">✅ 安全拔下充电器！你避免了一场灾难。</div>`;
+    area.innerHTML = `<div style="margin-top:12px;color:#88dd88;font-size:14px;">�?安全拔下充电器！你避免了一场灾难�?/div>`;
     unlockAchievement('safe_unplug');
     unlockTip('t31');
     resultArea.className = 'result-area result-success';
@@ -2175,9 +1923,9 @@ function showUnplugUI(device, charger, result) {
   const totalTime = 25000; // 25 seconds total until worst event
   const chargeTimestamp = Date.now(); // Track which charge session this is
   const intervals = [
-    { at: 5000,  msg: '💡 设备已充满', cls: '' },
+    { at: 5000,  msg: '💡 设备已充�?, cls: '' },
     { at: 10000, msg: '⚠️ 设备有点发热', cls: 'result-warning' },
-    { at: 15000, msg: '⚠️⚠️ 温度正在升高！', cls: 'result-danger' },
+    { at: 15000, msg: '⚠️⚠️ 温度正在升高�?, cls: 'result-danger' },
     { at: 20000, msg: '🔥🔥🔥 请立即拔下！！！', cls: 'result-danger' },
   ];
 
@@ -2194,8 +1942,8 @@ function showUnplugUI(device, charger, result) {
       if (elapsed < 5000) label.textContent = '安全';
       else if (elapsed < 10000) { label.textContent = '建议拔下'; if(fill)fill.style.background='#ffaa00'; }
       else if (elapsed < 15000) { label.textContent = '⚠️ 注意'; if(fill)fill.style.background='#ff6600'; if(btn)btn.classList.add('urgent'); }
-      else if (elapsed < 20000) { label.textContent = '🔥 危险！'; if(fill)fill.style.background='#ff4444'; if(fill)fill.classList.add('critical'); if(btn){btn.classList.remove('urgent');btn.classList.add('critical');} }
-      else { label.textContent = '💀 极限！'; }
+      else if (elapsed < 20000) { label.textContent = '🔥 危险�?; if(fill)fill.style.background='#ff4444'; if(fill)fill.classList.add('critical'); if(btn){btn.classList.remove('urgent');btn.classList.add('critical');} }
+      else { label.textContent = '💀 极限�?; }
     }
 
     // Check for stage-based area styling
@@ -2233,7 +1981,7 @@ function triggerOverchargeEvent(device, charger) {
   const area = $('unplugArea');
   if (area) area.innerHTML = '';
 
-  // Find or create the message element — use current DOM
+  // Find or create the message element �?use current DOM
   let msgDiv = document.getElementById('finalResultMessage');
   if (!msgDiv) {
     msgDiv = document.querySelector('#resultContent>div:last-child');
@@ -2259,7 +2007,7 @@ function triggerOverchargeEvent(device, charger) {
   // Check overcharge challenge
   if (!challengeDone) {
     const ch = getDailyChallenge();
-    if (ch.id === 'overcharge_warning') { challengeDone = true; challengeStreak++; lastCompleteDate = new Date().getFullYear() + '-' + (new Date().getMonth()+1) + '-' + new Date().getDate(); showAchievementToast('⏰','完成挑战：忘拔大师'); renderChallenge(); }
+    if (ch.id === 'overcharge_warning') { challengeDone = true; challengeStreak++; lastCompleteDate = new Date().getFullYear() + '-' + (new Date().getMonth()+1) + '-' + new Date().getDate(); showAchievementToast('�?,'完成挑战：忘拔大�?); renderChallenge(); }
   }
   saveState();
 }
@@ -2287,7 +2035,7 @@ function showFinalMessage(result, device) {
     chainDiv.className = 'chain-msg-wrapper';
     const level = result.chainLevel || 2;
     const hotClass = level >= 5 ? 'hot' : '';
-    chainDiv.innerHTML = `<div class="chain-label">🔁 连锁反应 · 第 ${level} 次</div>${result.chainMessage.replace(/\n/g, '<br>')}`;
+    chainDiv.innerHTML = `<div class="chain-label">🔁 连锁反应 · �?${level} �?/div>${result.chainMessage.replace(/\n/g, '<br>')}`;
     msgDiv.after(chainDiv);
   }
 
@@ -2296,7 +2044,7 @@ function showFinalMessage(result, device) {
     const chalDiv = document.createElement('div');
     chalDiv.style.cssText = 'margin-top:10px;padding:10px 14px;background:#2a2a1a;border-radius:10px;border:1px solid #5a5a2a;text-align:center;';
     const challenge = getDailyChallenge();
-    chalDiv.innerHTML = `🎯 <strong>今日挑战完成！</strong><br><span style="font-size:13px;color:#ccc;">获得称号：${result.challengeReward || challenge.reward}</span>`;
+    chalDiv.innerHTML = `🎯 <strong>今日挑战完成�?/strong><br><span style="font-size:13px;color:#ccc;">获得称号�?{result.challengeReward || challenge.reward}</span>`;
     (document.querySelector('.chain-msg-wrapper') || msgDiv).after(chalDiv);
   }
 
@@ -2322,7 +2070,7 @@ function showAchievementToast(icon, name) {
   const textEl = document.getElementById('achiToastText');
   if (!el || !textEl || !iconEl) return;
   iconEl.textContent = icon;
-  textEl.textContent = '解锁成就：' + name;
+  textEl.textContent = '解锁成就�? + name;
   el.classList.add('show');
   if (window._achiToastTimer) clearTimeout(window._achiToastTimer);
   window._achiToastTimer = setTimeout(() => { el.classList.remove('show'); }, 3500);
@@ -2337,12 +2085,12 @@ function updateStats(){attemptCount.textContent=attempts;explodeCount.textConten
 function saveState(){try{localStorage.setItem('charger_sim_state',JSON.stringify({attempts,explodes,abstractEvents,forgets,unlockedAchievements,unlockedTipKeys:Object.keys(unlockedTips),challengeDate,challengeDone,challengeStreak,lastCompleteDate,chainDeviceId,chainCount}));}catch(e){}}
 function loadState(){try{const r=localStorage.getItem('charger_sim_state');if(r){const d=JSON.parse(r);attempts=d.attempts||0;explodes=d.explodes||0;abstractEvents=d.abstractEvents||0;forgets=d.forgets||0;unlockedAchievements=d.unlockedAchievements||{};unlockedTips={};(d.unlockedTipKeys||[]).forEach(k=>{unlockedTips[k]=true;});challengeDate=d.challengeDate||'';challengeDone=d.challengeDone||false;challengeStreak=d.challengeStreak||0;lastCompleteDate=d.lastCompleteDate||'';chainDeviceId=d.chainDeviceId||null;chainCount=d.chainCount||0;}}catch(e){}}
 
-function resetAll(){if(!confirm('确定要重置所有数据吗？'))return;localStorage.removeItem('charger_sim_state');attempts=0;explodes=0;abstractEvents=0;forgets=0;unlockedAchievements={};unlockedTips={};selectedDeviceId=null;selectedChargerId=null;challengeDate='';challengeDone=false;challengeStreak=0;lastCompleteDate='';chainDeviceId=null;chainCount=0;stopCharging();resultPlaceholder.style.display='block';resultContent.style.display='none';resultContent.innerHTML='';resultArea.className='result-area';renderAll();}
+function resetAll(){if(!confirm('确定要重置所有数据吗�?))return;localStorage.removeItem('charger_sim_state');attempts=0;explodes=0;abstractEvents=0;forgets=0;unlockedAchievements={};unlockedTips={};selectedDeviceId=null;selectedChargerId=null;challengeDate='';challengeDone=false;challengeStreak=0;lastCompleteDate='';chainDeviceId=null;chainCount=0;stopCharging();resultPlaceholder.style.display='block';resultContent.style.display='none';resultContent.innerHTML='';resultArea.className='result-area';renderAll();}
 
 // ======================================================================
 // AD TOGGLE
 // ======================================================================
-function toggleAds(){adModeEnabled=!adModeEnabled;$('coverAdSection').style.display=adModeEnabled?'':'none';$('gameAdBar').style.display=adModeEnabled?'':'none';$('adToggle').textContent=adModeEnabled?'📢 广告位':'🚫 广告隐藏';try{localStorage.setItem('charger_ad_visible',adModeEnabled?'1':'0');}catch(e){}}
+function toggleAds(){adModeEnabled=!adModeEnabled;$('coverAdSection').style.display=adModeEnabled?'':'none';$('gameAdBar').style.display=adModeEnabled?'':'none';$('adToggle').textContent=adModeEnabled?'📢 广告�?:'🚫 广告隐藏';try{localStorage.setItem('charger_ad_visible',adModeEnabled?'1':'0');}catch(e){}}
 function loadAdPref(){try{if(localStorage.getItem('charger_ad_visible')==='0'){adModeEnabled=false;$('coverAdSection').style.display='none';$('gameAdBar').style.display='none';$('adToggle').textContent='🚫 广告隐藏';}}catch(e){}}
 
 // ======================================================================
@@ -2377,7 +2125,7 @@ chargeBtn.addEventListener('click',()=>{
   if(!device||!charger) return;
   // Clean up any previous animation/overcharge timers
   clearChargeAnimation();
-  isCharging=true; chargeBtn.disabled=true; chargeBtn.textContent='⏳ 充电中...'; attempts++;
+  isCharging=true; chargeBtn.disabled=true; chargeBtn.textContent='�?充电�?..'; attempts++;
   const oldP=resultArea.querySelector('.particle-container'); if(oldP) oldP.remove();
   const result=evaluateCharge(device,charger);
   if(result.status==='explode')explodes++; if(result.isAbstract)abstractEvents++;
@@ -2452,14 +2200,14 @@ const ANNOUNCEMENTS = [
     title: '内容扩充 + SEO优化',
     body: `<ul>
       <li>新增4款设备：Apple Vision Pro、扫地机器人、电动滑板车、AR智能眼镜</li>
-      <li>新增2款充电器：无线磁吸充电宝、USB-C 扩展坞</li>
-      <li>新增2个抽象事件：平行宇宙、充电神曲</li>
+      <li>新增2款充电器：无线磁吸充电宝、USB-C 扩展�?/li>
+      <li>新增2个抽象事件：平行宇宙、充电神�?/li>
       <li>新增5条充电小知识（共40条）</li>
-      <li>新增4个成就</li>
-      <li>优化了相关问题，加速搜索引擎收录</li>
-      <li>34款设备 × 22款充电器 = 748种组合等你探索！</li>
+      <li>新增4个成�?/li>
+      <li>优化了相关问题，加速搜索引擎收�?/li>
+      <li>34款设�?× 22款充电器 = 748种组合等你探索！</li>
     </ul>`,
-    tag: '新内容'
+    tag: '新内�?
   },
   {
     date: '2026-07-13', version: 'v1.1',
@@ -2467,10 +2215,10 @@ const ANNOUNCEMENTS = [
     body: `<ul>
       <li>每日挑战：每天一个随机挑战任务，完成后获得称号和连击天数</li>
       <li>连锁反应：连续充同一个设备会触发越来越离谱的事件，等级越高越抽象</li>
-      <li>设备徽章：被连续充电的设备卡片上会显示连锁等级标识</li>
-      <li>连续完成每日挑战会累积天数，断了就重来</li>
+      <li>设备徽章：被连续充电的设备卡片上会显示连锁等级标�?/li>
+      <li>连续完成每日挑战会累积天数，断了就重�?/li>
     </ul>`,
-    tag: '新功能'
+    tag: '新功�?
   },
   {
     date: '2026-07-12', version: 'v1.01',
@@ -2483,14 +2231,14 @@ const ANNOUNCEMENTS = [
   },
   {
     date: '2026-07-11', version: 'v1.0',
-    title: '充电模拟器正式上线',
+    title: '充电模拟器正式上�?,
     body: `<ul>
-      <li>30款设备：手机、电脑、游戏机、配件、离谱设备应有尽有</li>
+      <li>30款设备：手机、电脑、游戏机、配件、离谱设备应有尽�?/li>
       <li>20款充电器：从5W苹果头到核能充电器和特斯拉超充桩</li>
-      <li>39个成就：耐心惊人、麒麟臂、无限电量...收集控狂喜</li>
-      <li>35条充电小知识：边玩边学</li>
-      <li>忘拔机制：充完不拔？等着火灾、AI觉醒、反向供电</li>
-      <li>抽象事件：时空短信、飞天特斯拉、黑洞充电...600+种组合等你探索</li>
+      <li>39个成就：耐心惊人、麒麟臂、无限电�?..收集控狂�?/li>
+      <li>35条充电小知识：边玩边�?/li>
+      <li>忘拔机制：充完不拔？等着火灾、AI觉醒、反向供�?/li>
+      <li>抽象事件：时空短信、飞天特斯拉、黑洞充�?..600+种组合等你探�?/li>
       <li>核能特效：核能充电器专属全屏爆炸动画</li>
     </ul>`,
     tag: '上线'
@@ -2603,12 +2351,12 @@ if (feedbackForm) {
     if (!message || message.length < 2) {
       feedbackStatus.className = 'feedback-status error';
       feedbackStatus.style.display = 'block';
-      feedbackStatus.textContent = '请填写反馈内容';
+      feedbackStatus.textContent = '请填写反馈内�?;
       return;
     }
 
     feedbackSubmit.disabled = true;
-    feedbackSubmit.textContent = '⏳ 发送中...';
+    feedbackSubmit.textContent = '�?发送中...';
     feedbackStatus.className = 'feedback-status';
     feedbackStatus.style.display = 'none';
 
@@ -2622,334 +2370,31 @@ if (feedbackForm) {
       if (data.success) {
         feedbackStatus.className = 'feedback-status success';
         feedbackStatus.style.display = 'block';
-        feedbackStatus.textContent = '✅ 发送成功！感谢你的反馈 🎉';
+        feedbackStatus.textContent = '�?发送成功！感谢你的反馈 🎉';
         document.getElementById('feedbackName').value = '';
         document.getElementById('feedbackContact').value = '';
         document.getElementById('feedbackMessage').value = '';
         setTimeout(closeFeedback, 2000);
       } else {
-        throw new Error(data.error || '发送失败');
+        throw new Error(data.error || '发送失�?);
       }
     } catch (err) {
       feedbackStatus.className = 'feedback-status error';
       feedbackStatus.style.display = 'block';
-      feedbackStatus.textContent = '❌ 发送失败，请稍后再试';
+      feedbackStatus.textContent = '�?发送失败，请稍后再�?;
     } finally {
       feedbackSubmit.disabled = false;
-      feedbackSubmit.textContent = '📤 发送反馈';
+      feedbackSubmit.textContent = '📤 发送反�?;
     }
   });
 }
 
 // ======================================================================
-// DEV PANEL
-// ======================================================================
-let devLogoClickCount = 0, devLogoClickTimer = null;
-let devMode = false;
-let devChallengeOffset = 0; // for testing different challenges
-
-// Activate: click cover logo 7 times rapidly
-document.addEventListener('click', (e) => {
-  const logo = e.target.closest('.cover-logo');
-  if (!logo) return;
-  devLogoClickCount++;
-  if (devLogoClickTimer) clearTimeout(devLogoClickTimer);
-  devLogoClickTimer = setTimeout(() => { devLogoClickCount = 0; }, 2000);
-  if (devLogoClickCount >= 7) {
-    devLogoClickCount = 0;
-    devMode = !devMode;
-    try { sessionStorage.setItem('charger_dev_mode', devMode ? '1' : '0'); } catch(e) {}
-    if (devMode) { showAchievementToast('⚙️','开发者模式已激活'); console.log('⚙️ 开发者模式已激活'); updateDevBadge(); }
-    else { console.log('⚙️ 开发者模式已关闭'); updateDevBadge(); }
-  }
-});
-
-try { devMode = sessionStorage.getItem('charger_dev_mode') === '1'; } catch(e) {}
-
-// Override getDailyChallenge to support challenge offset (assignment, not declaration - avoids hoisting trap)
-const _origGetDailyChallenge = getDailyChallenge;
-getDailyChallenge = function() {
-  if (!devMode || devChallengeOffset === 0) return _origGetDailyChallenge();
-  const daysSinceEpoch = Math.floor(Date.now() / 86400000) + devChallengeOffset;
-  return CHALLENGES[((daysSinceEpoch % CHALLENGES.length) + CHALLENGES.length) % CHALLENGES.length];
-};
-
-const devPanel = document.getElementById('devPanel');
-const devClose = document.getElementById('devClose');
-
-function openDevPanel() {
-  if (!devPanel) return;
-  renderDevStats();
-  renderDevAchiList();
-  renderDevEvents();
-  renderDevTestSelects();
-  renderDevChallenge();
-  devPanel.classList.add('open');
-  // Adapt game padding
-  document.getElementById('gameContent')?.style.setProperty('padding-bottom', (devPanel.offsetHeight || 200) + 'px');
-}
-
-function closeDevPanel() {
-  if (devPanel) devPanel.classList.remove('open');
-  document.getElementById('gameContent')?.style.removeProperty('padding-bottom');
-}
-
-if (devClose && devPanel) {
-  devClose.addEventListener('click', closeDevPanel);
-}
-
-// Dev tab switching
-document.addEventListener('click', (e) => {
-  const tab = e.target.closest('.dev-tab');
-  if (!tab || !devPanel?.classList.contains('open')) return;
-  const name = tab.dataset.devtab;
-  document.querySelectorAll('.dev-tab').forEach(t => t.classList.remove('active'));
-  tab.classList.add('active');
-  document.querySelectorAll('.dev-tab-content').forEach(c => c.classList.remove('active'));
-  const target = document.getElementById('devTab' + name.charAt(0).toUpperCase() + name.slice(1));
-  if (target) target.classList.add('active');
-  // Lazy render challenge tab
-  if (name === 'challenge') renderDevChallenge();
-  if (name === 'achi') renderDevAchiList();
-});
-
-// --- Tab: Stats ---
-function renderDevStats() {
-  const grid = document.getElementById('devStatsGrid');
-  if (!grid) return;
-  const achiUnlocked = Object.keys(unlockedAchievements).length;
-  const tipUnlocked = Object.keys(unlockedTips).length;
-  grid.innerHTML = `
-    <div class="dev-stat-card"><span class="dev-stat-num">${devices.length}</span><span class="dev-stat-label">设备</span></div>
-    <div class="dev-stat-card"><span class="dev-stat-num">${chargers.length}</span><span class="dev-stat-label">充电器</span></div>
-    <div class="dev-stat-card"><span class="dev-stat-num">${achiUnlocked}/${Object.keys(ACHIEVEMENTS).length}</span><span class="dev-stat-label">成就</span></div>
-    <div class="dev-stat-card"><span class="dev-stat-num">${tipUnlocked}/${tips.length}</span><span class="dev-stat-label">小知识</span></div>
-    <div class="dev-stat-card"><span class="dev-stat-num">${abstractEventsPool.length}</span><span class="dev-stat-label">抽象事件</span></div>
-    <div class="dev-stat-card"><span class="dev-stat-num">${overchargeEvents.length}</span><span class="dev-stat-label">忘拔事件</span></div>
-    <div class="dev-stat-card"><span class="dev-stat-num">${chainEvents.length}</span><span class="dev-stat-label">连锁等级</span></div>
-  `;
-}
-
-// --- Quick actions ---
-function devUnlockAll() {
-  Object.keys(ACHIEVEMENTS).forEach(k => { unlockedAchievements[k] = 'new'; });
-  renderAchievements(); saveState();
-  showAchievementToast('🔓','已解锁全部成就');
-  renderDevStats(); renderDevAchiList();
-}
-function devUnlockAllTips() {
-  tips.forEach(t => { unlockedTips[t.id] = true; });
-  renderTips(); saveState();
-  showAchievementToast('📖','已解锁全部小知识');
-  renderDevStats();
-}
-function devResetAll() { resetAll(); renderDevStats(); renderDevAchiList(); }
-
-// --- Tab: Achievement conditions ---
-const ACHI_CONDITIONS = {
-  // Game result achievements
-  normal_charge: '任意设备 + 功率合适的充电器 → 正常充',
-  slow_charge: '任意 + 5W 慢充 → 极慢',
-  fast_charge: '任意 + 大功率充电器 → 快速充',
-  underpowered: '任意 + 功率不够的充电器（≥最低功率的70%但不足），力不从心',
-  overheated: '任意 + 功率≥4倍最低功率 且 >60W → 过热保护',
-  overkill: '任意 + 超高功率充电器 (≥4倍最低功率 且 >60W) → 暴力充',
-  mismatch: '任意 + 接口不匹配的充电器',
-  ancient: '任意 + 30-pin 古董充电器',
-  nokia_survive: '📞诺基亚3310 + 🔥电磁炉改装 → 烤不化；或📞诺基亚 + ☠️杂牌 → 没炸（看脸）',
-  cheap_boom: '任意（非诺基亚） + ☠️杂牌充电器 → 爆炸',
-  cheap_safe: '任意 + ☠️杂牌充电器 → 没炸（看脸）',
-  wireless: '支持无线的设备 + 🔄无线充电器',
-  explode: '任意 + 危险充电器 → 爆炸结局',
-  full_charge: '任意 + 任意 → 充到100%后安全结束',
-  safe_unplug: '充到100% → 手动拔下充电器',
-  glacial_arm: '任意 + 💪手摇发电机 → 手酸到爆',
-  patient_af: '任意 + 🖥️电脑USB 2.0 → 耐心煎熬',
-  solar_noon: '任意 + ☀️太阳能板 → 阳光正好',
-  // Abstract achievements
-  bio_self: '🧑人类 + ⚡生物电充电器 → 自充之路；或人类+任意充电器',
-  tesla_fly: '🚗特斯拉 + 任意充电器（运气好→飞天）极小概率',
-  ebike_fly: '🛵电动自行车 + 🚗特斯拉超充桩 → 起飞',
-  time_travel: '🤖ChatGPT + 任意充电器 → AI的觉醒',
-  meta_loop: '🔋充电宝 + 功率≥20W（30%概率）；或🍚电饭煲 + 任意',
-  ghost_charge: '任意组合（超低概率随机触发抽象事件）',
-  infinity: '任意组合（抽象事件池随机）',
-  blackhole: '任意组合（抽象事件池随机）',
-  bitcoin: '任意组合（抽象事件池随机）',
-  cyber_haunt: '任意组合（抽象事件池随机）',
-  solar_dance: '任意 + ☀️太阳能（夜晚有概率→月华充电）',
-  manual_hero: '任意 + 💪手摇发电机（40%→摇成肌肉男）',
-  nuclear_mutate: '任意 + ☢️核能充电器 → 变异！',
-  // Overcharge achievements
-  fire: '充到100%后不拔 → 5秒不着火就继续等 → 起火',
-  grid_feed: '充到100%后不拔 → 等到反向供电',
-  ai_birth: '充到100%后不拔 → 等到AI觉醒',
-  battery_swell: '充到100%后不拔 → 电池鼓包',
-  // Special
-  overheat_event: '功率过高触发过热保护',
-  chain_2: '连锁反应达到 2 级',
-  chain_5: '连锁反应达到 5 级',
-};
-
-function renderDevAchiList() {
-  const list = document.getElementById('devAchiList');
-  if (!list) return;
-  const entries = Object.entries(ACHIEVEMENTS).map(([id, a]) => ({
-    id, ...a, unlocked: !!unlockedAchievements[id],
-    condition: ACHI_CONDITIONS[id] || '（游戏中触发，具体条件见代码）'
-  }));
-  list.innerHTML = entries.map(a =>
-    `<div class="dev-achi-item ${a.unlocked ? '' : 'locked'}">
-      <span class="achi-icon">${a.unlocked ? a.icon : '🔒'}</span>
-      <div class="achi-info">
-        <span class="achi-name">${a.name} <span class="dev-badge ${a.unlocked ? 'unlocked' : ''}">${a.unlocked ? '已解锁' : '未解锁'}</span></span>
-        <div class="achi-condition">${a.condition}</div>
-      </div>
-    </div>`
-  ).join('');
-}
-
-// --- Tab: Events ---
-function renderDevEvents() {
-  const list = document.getElementById('devDevEventsList');
-  if (!list) return;
-  let html = '<div class="dev-section-title">🎭 抽象事件 (' + abstractEventsPool.length + ')</div>';
-  abstractEventsPool.forEach((e, i) => {
-    const a = ACHIEVEMENTS[e.achi];
-    html += `<div class="dev-event-item"><span class="e-label">#${i+1} · ${a ? a.name : e.achi}</span>${e.msg({name:'[设备]',emoji:'📱'},{name:'[充电器]',emoji:'🔌'}).replace(/\n/g,'<br>')}</div>`;
-  });
-  html += '<div style="margin-top:10px;"><div class="dev-section-title">⏰ 忘拔事件 (' + overchargeEvents.length + ')</div>';
-  overchargeEvents.forEach((e, i) => {
-    html += `<div class="dev-event-item"><span class="e-label">#${i+1} · ${e.achi} (${e.delay/1000}s触发)</span>${e.msg({name:'[设备]',emoji:'📱'},{name:'[充电器]',emoji:'🔌'}).replace(/\n/g,'<br>')}</div>`;
-  });
-  html += '<div style="margin-top:10px;"><div class="dev-section-title">🔁 连锁事件 (' + chainEvents.length + ')</div>';
-  chainEvents.forEach((e, i) => {
-    html += `<div class="dev-event-item"><span class="e-label">#${i+1} · 连锁≥${e.minChain} · ${Math.round(e.chance*100)}%概率</span>${e.msg({name:'[设备]',emoji:'📱'},{name:'[充电器]',emoji:'🔌'},e.minChain).replace(/\n/g,'<br>')}</div>`;
-  });
-  list.innerHTML = html;
-}
-
-// --- Tab: Challenge ---
-function renderDevChallenge() {
-  const info = document.getElementById('devChallengeInfo');
-  const cList = document.getElementById('devChallengeList');
-  if (!info || !cList) return;
-  const current = getDailyChallenge();
-  const idx = CHALLENGES.indexOf(current);
-  info.innerHTML = `
-    <div style="background:#1a1a2e;border:1px solid #2a2a4a;border-radius:6px;padding:8px 10px;">
-      <div style="font-size:13px;"><strong>${current.icon} ${current.title}</strong> <span class="dev-badge">偏移: ${devChallengeOffset}</span></div>
-      <div style="font-size:11px;color:#aaa;margin-top:2px;">${current.desc}</div>
-      <div style="font-size:11px;color:#888;margin-top:4px;">奖励称号: ${current.reward} · 已完成: ${challengeDone ? '✅' : '❌'} · 连击: 🔥${challengeStreak}天</div>
-    </div>`;
-  // Show all challenges
-  cList.innerHTML = CHALLENGES.map((c, i) =>
-    `<div class="dev-event-item" style="font-size:11px;${i===idx?'border-color:#ff8844;':''}">
-      <span class="e-label">#${i+1}${i===idx?' ← 当前':''}</span>
-      ${c.icon} ${c.title}：${c.desc}
-    </div>`
-  ).join('');
-}
-
-function devNextChallenge() {
-  devChallengeOffset++;
-  renderDevChallenge();
-  renderChallenge();
-  showAchievementToast('⏭️', '挑战偏移: ' + (devChallengeOffset > 0 ? '+' : '') + devChallengeOffset);
-}
-function devPrevChallenge() {
-  devChallengeOffset--;
-  renderDevChallenge();
-  renderChallenge();
-  showAchievementToast('⏮️', '挑战偏移: ' + devChallengeOffset);
-}
-function devResetChallenge() {
-  devChallengeOffset = 0;
-  challengeDone = false;
-  challengeDate = '';
-  challengeStreak = 0;
-  lastCompleteDate = '';
-  saveState();
-  renderDevChallenge();
-  renderChallenge();
-  showAchievementToast('🔄','挑战已重置');
-}
-
-// --- Tab: Combo Test ---
-function renderDevTestSelects() {
-  const ds = document.getElementById('devTestDevice');
-  const cs = document.getElementById('devTestCharger');
-  if (!ds || !cs) return;
-  ds.innerHTML = devices.map(d => `<option value="${d.id}">${d.emoji} ${d.name}</option>`).join('');
-  cs.innerHTML = chargers.map(c => `<option value="${c.id}">${c.emoji} ${c.name} (${c.power}W)</option>`).join('');
-}
-
-function devRunTest() {
-  const did = document.getElementById('devTestDevice')?.value;
-  const cid = document.getElementById('devTestCharger')?.value;
-  if (!did || !cid) return;
-  const device = getDevice(did), charger = getCharger(cid);
-  if (!device || !charger) return;
-  const result = evaluateCharge(device, charger);
-  const box = document.getElementById('devTestResult');
-  if (!box) return;
-  const icons = { success:'✅', explode:'💥', overheat:'🔥', mismatch:'🔌', abstract:'🌀' };
-  box.innerHTML = `<strong style="color:#ff8844;">${icons[result.status]||'❓'} 结果: ${result.status}</strong>
-    · 速度: ${result.speed||'none'} · 成就: ${(result.achievement && ACHIEVEMENTS[result.achievement]?.name)||'无'}
-    · 抽象: ${result.isAbstract ? '是' : '否'}
-    <hr style="border-color:#2a2a4a;margin:4px 0;">
-    ${result.message.replace(/\n/g,'<br>')}`;
-}
-
-// --- Tab: Data ---
-function devRefreshData() {
-  const box = document.getElementById('devDataContent');
-  if (!box) return;
-  try { box.textContent = JSON.stringify(JSON.parse(localStorage.getItem('charger_sim_state')||'{}'), null, 2); } catch(e) { box.textContent = '{}'; }
-}
-
-// Toggle dev panel: press ` (backtick) key, or click the floating badge
-document.addEventListener('keydown', (e) => {
-  if (e.key === '`' || e.key === '~') {
-    e.preventDefault();
-    toggleDevPanel();
-  }
-});
-
-// Floating dev badge (appears when dev mode is active)
-function updateDevBadge() {
-  let badge = document.getElementById('devBadge');
-  if (devMode) {
-    if (!badge) {
-      badge = document.createElement('div');
-      badge.id = 'devBadge';
-      badge.innerHTML = '⚙️ DEV';
-      badge.style.cssText = 'position:fixed;bottom:12px;right:12px;z-index:99998;background:#ff8844;color:#000;font-size:11px;font-weight:700;padding:4px 10px;border-radius:20px;cursor:pointer;box-shadow:0 2px 10px rgba(255,136,68,.4);';
-      badge.addEventListener('click', toggleDevPanel);
-      document.body.appendChild(badge);
-    }
-    badge.style.display = 'flex';
-  } else {
-    if (badge) badge.style.display = 'none';
-  }
-}
-
-function toggleDevPanel() {
-  if (devPanel?.classList.contains('open')) { closeDevPanel(); }
-  else {
-    devMode = true;
-    try { sessionStorage.setItem('charger_dev_mode', '1'); } catch(ex) {}
-    openDevPanel();
-  }
-}
-
-// Call updateDevBadge on init
-// (will be called after loadState in INIT)
 
 // ======================================================================
 // INIT
 // ======================================================================
-loadState(); loadAdPref(); renderAll(); updateDevBadge();
+loadState(); loadAdPref(); renderAll();
 
 // 每日挑战 - 凌晨自动刷新
 function scheduleMidnightRefresh() {
@@ -2974,10 +2419,10 @@ document.getElementById('trophyBtn')?.addEventListener('click', function _markVi
   sessionStorage.setItem('achi_viewed', '1');
   this.removeEventListener('click', _markViewed);
 });
-console.log('⚡ 充电模拟器 v1.2 - 内容扩充 + SEO 🚀');
-console.log(`📱 ${devices.length} 款设备 · 🔌 ${chargers.length} 款充电器 · 🏆 ${Object.keys(ACHIEVEMENTS).length} 成就 · 💡 ${tips.length} 知识`);
+console.log('�?充电模拟�?v1.2 - 内容扩充 + SEO 🚀');
+console.log(`📱 ${devices.length} 款设�?· 🔌 ${chargers.length} 款充电器 · 🏆 ${Object.keys(ACHIEVEMENTS).length} 成就 · 💡 ${tips.length} 知识`);
 console.log('🔗 新站已提交搜索引擎，等收录中...');
-console.log('✨ 在线小游戏 · 免费 · 纯静态 · 欢迎分享');
+console.log('�?在线小游�?· 免费 · 纯静�?· 欢迎分享');
 </script>
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8813335635822438" crossorigin="anonymous"></script>
 </body>
