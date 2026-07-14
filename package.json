@@ -1,0 +1,8 @@
+{
+  "name": "charger-simulator",
+  "version": "1.2.1",
+  "private": true,
+  "dependencies": {
+    "nodemailer": "^6.9.16"
+  }
+}

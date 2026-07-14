@@ -581,6 +581,59 @@
     font-size: 11px; color: #444; margin-top: 6px;
   }
 
+  /* ===== FEEDBACK MODAL ===== */
+  .feedback-overlay {
+    display: none; position: fixed; inset: 0; z-index: 10001;
+    background: rgba(0,0,0,.7); backdrop-filter: blur(6px);
+    align-items: center; justify-content: center; padding: 20px;
+  }
+  .feedback-overlay.open { display: flex; }
+  .feedback-modal {
+    background: #14142a; border: 1px solid #3a3a5c;
+    border-radius: 16px; max-width: 480px; width: 100%;
+    padding: 24px; position: relative;
+  }
+  .feedback-modal-header {
+    display: flex; align-items: center; justify-content: space-between;
+    margin-bottom: 16px;
+  }
+  .feedback-modal-header h2 { font-size: 20px; color: #bb99ff; margin: 0; }
+  .feedback-close {
+    background: none; border: none; color: #666; font-size: 24px;
+    cursor: pointer; padding: 4px 8px; border-radius: 8px;
+    transition: background .2s;
+  }
+  .feedback-close:hover { background: #2a2a4a; color: #fff; }
+  .feedback-form { display: flex; flex-direction: column; gap: 12px; }
+  .feedback-form label { font-size: 13px; color: #aaa; }
+  .feedback-form input,
+  .feedback-form textarea {
+    background: #1a1a2e; border: 1px solid #2a2a4a; border-radius: 8px;
+    padding: 10px 12px; color: #e0e0e0; font-size: 14px;
+    font-family: inherit; outline: none; transition: border-color .2s;
+  }
+  .feedback-form input:focus,
+  .feedback-form textarea:focus { border-color: #7b68ee; }
+  .feedback-form textarea { min-height: 120px; resize: vertical; }
+  .feedback-submit {
+    background: linear-gradient(135deg,#7b68ee,#5a4ab0);
+    border: none; border-radius: 10px; color: #fff; font-size: 16px;
+    font-weight: 700; padding: 12px 24px; cursor: pointer;
+    transition: all .3s; margin-top: 4px;
+  }
+  .feedback-submit:hover { transform: translateY(-2px); box-shadow: 0 4px 20px rgba(123,104,238,.4); }
+  .feedback-submit:disabled { opacity: .5; cursor: not-allowed; transform: none; }
+  .feedback-status { font-size: 13px; text-align: center; padding: 8px; border-radius: 8px; display: none; }
+  .feedback-status.success { display: block; background: #1a3a2a; color: #88dd88; border: 1px solid #44d44a; }
+  .feedback-status.error { display: block; background: #3a1a1a; color: #ff8888; border: 1px solid #ff4444; }
+  .feedback-btn {
+    background: #2a2a4a; border: 1px solid #4a4a6a; cursor: pointer;
+    font-size: 13px; padding: 4px 12px; border-radius: 8px;
+    transition: all .2s; color: #ccc; display: inline-flex;
+    align-items: center; gap: 4px;
+  }
+  .feedback-btn:hover { background: #3a3a5c; border-color: #7b68ee; color: #fff; }
+
   
 </style>
 </head>
@@ -773,12 +826,37 @@
     <div class="announce-list" id="announceList"></div>
     <div class="announce-footer">
       <div class="feedback-title">💬 反馈 &amp; 建议</div>
-      <div class="feedback-email">
-        📧 QQ邮箱�?a href="mailto:3180847936@qq.com">3180847936@qq.com</a><br>
-        📧 Gmail�?a href="mailto:alsmad0624@gmail.com">alsmad0624@gmail.com</a>
+      <div style="text-align:center;margin:8px 0;">
+        <button class="feedback-btn" id="feedbackOpenBtn">📝 写反�?/button>
       </div>
       <div class="feedback-hint">你的每一条反馈都会让充电模拟器变得更好玩 🎮</div>
     </div>
+  </div>
+</div>
+
+<!-- ===== FEEDBACK MODAL ===== -->
+<div class="feedback-overlay" id="feedbackOverlay">
+  <div class="feedback-modal">
+    <div class="feedback-modal-header">
+      <h2>📝 写反�?/h2>
+      <button class="feedback-close" id="feedbackClose">&times;</button>
+    </div>
+    <form class="feedback-form" id="feedbackForm">
+      <div>
+        <label for="feedbackName">你的名字（选填�?/label>
+        <input type="text" id="feedbackName" placeholder="怎么称呼你？" maxlength="20">
+      </div>
+      <div>
+        <label for="feedbackContact">联系方式（选填�?/label>
+        <input type="text" id="feedbackContact" placeholder="QQ / 邮箱，方便我回复�? maxlength="50">
+      </div>
+      <div>
+        <label for="feedbackMessage">反馈内容</label>
+        <textarea id="feedbackMessage" placeholder="告诉我你的想法、建议或遇到�?Bug..." required></textarea>
+      </div>
+      <div class="feedback-status" id="feedbackStatus"></div>
+      <button type="submit" class="feedback-submit" id="feedbackSubmit">📤 发送反�?/button>
+    </form>
   </div>
 </div>
 
@@ -2086,7 +2164,7 @@ document.addEventListener('click', (e) => {
 });
 document.addEventListener('keydown',(e)=>{
   if(e.key==='Enter'&&!chargeBtn.disabled&&gameContent.classList.contains('visible'))chargeBtn.click();
-  if(e.key==='Escape'){const o1=document.getElementById('achiOverlay');if(o1)o1.classList.remove('open');const o2=document.getElementById('tipsOverlay');if(o2)o2.classList.remove('open');const o3=document.getElementById('announceOverlay');if(o3)o3.classList.remove('open');}
+  if(e.key==='Escape'){const o1=document.getElementById('achiOverlay');if(o1)o1.classList.remove('open');const o2=document.getElementById('tipsOverlay');if(o2)o2.classList.remove('open');const o3=document.getElementById('announceOverlay');if(o3)o3.classList.remove('open');const o4=document.getElementById('feedbackOverlay');if(o4)o4.classList.remove('open');}
 });
 
 // Achievement modal
@@ -2216,6 +2294,89 @@ if (announceClose && announceOverlay) {
 }
 if (announceOverlay) {
   announceOverlay.addEventListener('click', (e) => { if (e.target === announceOverlay) announceOverlay.classList.remove('open'); });
+}
+
+// ======================================================================
+// FEEDBACK MODAL
+// ======================================================================
+const feedbackOverlay = document.getElementById('feedbackOverlay');
+const feedbackOpenBtn = document.getElementById('feedbackOpenBtn');
+const feedbackClose = document.getElementById('feedbackClose');
+const feedbackForm = document.getElementById('feedbackForm');
+const feedbackSubmit = document.getElementById('feedbackSubmit');
+const feedbackStatus = document.getElementById('feedbackStatus');
+
+function openFeedback() {
+  feedbackStatus.className = 'feedback-status';
+  feedbackStatus.style.display = 'none';
+  feedbackOverlay.classList.add('open');
+}
+
+function closeFeedback() {
+  feedbackOverlay.classList.remove('open');
+}
+
+if (feedbackOpenBtn && feedbackOverlay) {
+  feedbackOpenBtn.addEventListener('click', (e) => {
+    e.stopPropagation();
+    openFeedback();
+  });
+}
+if (feedbackClose && feedbackOverlay) {
+  feedbackClose.addEventListener('click', closeFeedback);
+}
+if (feedbackOverlay) {
+  feedbackOverlay.addEventListener('click', (e) => {
+    if (e.target === feedbackOverlay) closeFeedback();
+  });
+}
+
+if (feedbackForm) {
+  feedbackForm.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    const name = document.getElementById('feedbackName').value.trim();
+    const contact = document.getElementById('feedbackContact').value.trim();
+    const message = document.getElementById('feedbackMessage').value.trim();
+
+    if (!message || message.length < 2) {
+      feedbackStatus.className = 'feedback-status error';
+      feedbackStatus.style.display = 'block';
+      feedbackStatus.textContent = '请填写反馈内�?;
+      return;
+    }
+
+    feedbackSubmit.disabled = true;
+    feedbackSubmit.textContent = '�?发送中...';
+    feedbackStatus.className = 'feedback-status';
+    feedbackStatus.style.display = 'none';
+
+    try {
+      const res = await fetch('/api/feedback', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ name, contact, message })
+      });
+      const data = await res.json();
+      if (data.success) {
+        feedbackStatus.className = 'feedback-status success';
+        feedbackStatus.style.display = 'block';
+        feedbackStatus.textContent = '�?发送成功！感谢你的反馈 🎉';
+        document.getElementById('feedbackName').value = '';
+        document.getElementById('feedbackContact').value = '';
+        document.getElementById('feedbackMessage').value = '';
+        setTimeout(closeFeedback, 2000);
+      } else {
+        throw new Error(data.error || '发送失�?);
+      }
+    } catch (err) {
+      feedbackStatus.className = 'feedback-status error';
+      feedbackStatus.style.display = 'block';
+      feedbackStatus.textContent = '�?发送失败，请稍后再�?;
+    } finally {
+      feedbackSubmit.disabled = false;
+      feedbackSubmit.textContent = '📤 发送反�?;
+    }
+  });
 }
 
 // ======================================================================
