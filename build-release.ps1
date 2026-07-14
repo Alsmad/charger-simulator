@@ -3,7 +3,7 @@ param(
     [string]$OutputDir = "release"
 )
 
-$content = Get-Content $SourceFile -Raw
+$content = Get-Content $SourceFile -Raw -Encoding UTF8
 $originalLength = $content.Length
 
 # 1) Strip DEV PANEL CSS (from marker to </style>)
@@ -23,7 +23,7 @@ $strippedLength = $content.Length
 # Write output
 $outputPath = Join-Path $OutputDir $SourceFile
 New-Item -ItemType Directory -Force -Path $OutputDir | Out-Null
-Set-Content -Path $outputPath -Value $content -NoNewline
+Set-Content -Path $outputPath -Value $content -NoNewline -Encoding UTF8
 
 Write-Host "✅ Release built: $outputPath"
 Write-Host "   $originalLength bytes → $strippedLength bytes (removed $($originalLength - $strippedLength) bytes)"
