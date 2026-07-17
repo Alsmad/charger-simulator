@@ -6,7 +6,7 @@
 <title>⚡ 充电模拟器 - 在线小游戏 | 选充电器看设备爆炸</title>
 <link rel="icon" href="favicon.svg">
 <meta name="theme-color" content="#1a1a2e">
-<meta name="description" content="充电模拟器是一款好玩的在线小游戏。选设备+选充电器，看正常充电、接口不匹配、爆炸还是隐藏结局？34款设备、22款充电器、41个成就等你探索！免费在线玩，无需下载。发现隐藏彩蛋和抽象事件，充完记得拔充电器！">
+<meta name="description" content="充电模拟器是一款好玩的在线小游戏。选设备+选充电器，看正常充电、接口不匹配、爆炸还是隐藏结局？40款设备、26款充电器、44个成就等你探索！免费在线玩，无需下载。发现隐藏彩蛋和抽象事件，充完记得拔充电器！">
 <meta name="keywords" content="充电模拟器,小游戏,在线游戏,充电器模拟,抽象游戏,免费小游戏,网页游戏,模拟器游戏,充电,爆炸模拟,隐藏结局,解压游戏,充电模拟,在线模拟器">
 <meta name="robots" content="index, follow">
 <meta name="author" content="福星">
@@ -14,7 +14,7 @@
 
 <!-- Open Graph -->
 <meta property="og:title" content="⚡ 充电模拟器 - 在线小游戏">
-<meta property="og:description" content="选设备+充电器，看不同组合的爆笑结局！34款设备22款充电器41个成就，免费在线玩。充完不拔后果自负！">
+<meta property="og:description" content="选设备+充电器，看不同组合的爆笑结局！40款设备26款充电器44个成就，免费在线玩。充完不拔后果自负！">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://www.charger-simulator.top">
 <meta property="og:locale" content="zh_CN">
@@ -22,7 +22,7 @@
 
 <!-- Twitter Card -->
 <meta name="twitter:title" content="⚡ 充电模拟器 - 在线小游戏">
-<meta name="twitter:description" content="选设备+充电器，看正常充电、爆炸还是隐藏结局？34款设备22款充电器等你试！">
+<meta name="twitter:description" content="选设备+充电器，看正常充电、爆炸还是隐藏结局？40款设备26款充电器等你试！">
 
 <!-- JSON-LD Structured Data -->
 <script type="application/ld+json">
@@ -30,7 +30,7 @@
   "@context": "https://schema.org",
   "@type": "WebApplication",
   "name": "充电模拟器",
-  "description": "一款好玩的在线小游戏。选择设备和充电器，观察不同组合带来的各种结局——正常充电、接口不匹配、爆炸、过热、以及各种抽象隐藏事件。34款设备、22款充电器、41个成就、40条小知识。",
+  "description": "一款好玩的在线小游戏。选择设备和充电器，观察不同组合带来的各种结局——正常充电、接口不匹配、爆炸、过热、以及各种抽象隐藏事件。40款设备、26款充电器、44个成就、52条小知识。",
   "applicationCategory": "GameApplication",
   "operatingSystem": "Any",
   "browserRequirements": "Requires JavaScript",
@@ -109,8 +109,8 @@
   .home-btn:hover { opacity: 1; background: #2a2a4a; border-color: #5a5a7a; }
   .fb-float-btn { position: fixed; bottom: 16px; right: 66px; z-index: 100; background: #1a1a2e; border: 1px solid #2a2a4a; color: #888; font-size: 12px; cursor: pointer; padding: 8px 14px; border-radius: 20px; display: flex; align-items: center; gap: 5px; transition: all .3s; opacity: .4; }
   .fb-float-btn:hover { opacity: 1; background: #2a2a4a; border-color: #7b68ee; color: #fff; }
-  .tips-label { font-size: 12px; color: #888; cursor: pointer; margin-left: 2px; }
-  .tips-label:hover { color: #bb99ff; }
+  .tips-label { font-size: 12px; color: #aaa; cursor: pointer; margin-left: 4px; background: #1a1a2e; border: 1px solid #2a2a4a; border-radius: 12px; padding: 1px 10px 1px 6px; display: inline-flex; align-items: center; gap: 2px; transition: all .2s; vertical-align: middle; }
+  .tips-label:hover { border-color: #7b68ee; color: #bb99ff; background: #222244; }
 
   /* SEO content — readable by search engines, minimal visual impact */
   .seo-content {
@@ -641,6 +641,17 @@
 
   
 </style>
+
+<!-- Baidu Analytics -->
+<script>
+var _hmt = _hmt || [];
+(function() {
+ var hm = document.createElement("script");
+ hm.src = "https://hm.baidu.com/hm.js?58f23ea97bff1ee9481db3238b494dcc";
+ var s = document.getElementsByTagName("script")[0]; 
+ s.parentNode.insertBefore(hm, s);
+})();
+</script>
 </head>
 <body>
 
@@ -680,7 +691,7 @@
       <span>🔥 爆炸: <strong id="explodeCount">0</strong></span>
       <span>👽 抽象: <strong id="abstractCount">0</strong></span>
       <span>⏰ 忘拔: <strong id="forgetCount">0</strong></span>
-      <span>🏆 成就: <strong id="achiCount">0</strong>/<span id="achiTotal">0</span><button class="trophy-btn" id="trophyBtn" title="查看成就">🏆</button><button class="trophy-btn" id="tipsBtn" title="充电小知识">💡</button><span class="tips-label">知识</span></span>
+      <span>🏆 成就: <strong id="achiCount">0</strong>/<span id="achiTotal">0</span><button class="trophy-btn" id="trophyBtn" title="查看成就">🏆</button><button class="trophy-btn" id="tipsBtn" title="充电小知识">💡</button><span class="tips-label" id="tipsLabel">知识</span></span>
     </div>
   </div>
 
@@ -752,16 +763,16 @@
   <p>充电模拟器是一款免费的在线小游戏，你只需要选择一款设备和一款充电器，点击「开始充电」就能看到各种意想不到的结果。纯网页游戏，无需下载，手机电脑都能玩。</p>
   <h3>游戏玩法</h3>
   <ul>
-    <li>从34款设备中选择一个（手机、平板、游戏机、配件、智能设备、或者离谱设备）</li>
-    <li>从22款充电器中选择一个（慢充、快充、特殊、危险、古董）</li>
+    <li>从40款设备中选择一个（手机、平板、游戏机、配件、穿戴、小家电、或者离谱设备）</li>
+    <li>从26款充电器中选择一个（慢充、快充、工业级、特殊、危险、古董）</li>
     <li>点击充电，观察结果——正常充电、速度太慢、接口不匹配、过热、或者爆炸 💥</li>
     <li>充到100%后记得拔掉充电器，不然会有隐藏事件发生！（电池鼓包、数据蒸发、火灾、AI觉醒）</li>
-    <li>解锁41个成就，收集40条充电小知识</li>
+    <li>解锁44个成就，收集52条充电小知识</li>
     <li>每天有随机挑战任务，完成后获得称号</li>
   </ul>
   <h3>游戏特色</h3>
   <ul>
-    <li>34款设备 × 22款充电器 = 700+ 种组合</li>
+    <li>40款设备 × 26款充电器 = 1000+ 种组合</li>
     <li>16个抽象隐藏事件（时空短信、AI觉醒、平行宇宙、反向输电、特斯拉飞天、充电神曲等）</li>
     <li>5个忘拔充电器隐藏结局</li>
     <li>核能充电器专属全屏爆炸特效动画</li>
@@ -874,9 +885,9 @@
 // DATA
 // ======================================================================
 
-const catDevice = { phone:'📱 手机', tablet:'💻 电脑/平板', gaming:'🎮 游戏', accessory:'🎧 配件', fun:'🤪 离谱' 
+const catDevice = { phone:'📱 手机', tablet:'💻 电脑/平板', gaming:'🎮 游戏', accessory:'🎧 配件', wearable:'⌚ 穿戴', gadget:'🔧 小家电', fun:'🤪 离谱' 
   };
-const catCharger = { slow:'🐢 慢充', fast:'⚡ 快充', special:'🔧 特殊', danger:'☠️ 危险', antique:'📼 古董' };
+const catCharger = { slow:'🐢 慢充', fast:'⚡ 快充', extreme:'☢️ 工业级', special:'🔧 特殊', danger:'☠️ 危险', antique:'📼 古董' };
 
 const devices = [
   { id:'iphone15',  name:'iPhone 15',        emoji:'📱', port:'usbc',     battery:3349,  minW:15, cat:'phone',     desc:'USB-C' },
@@ -910,22 +921,29 @@ const devices = [
   { id:'human',     name:'你自己',             emoji:'🧑', port:'usbc',     battery:99999, minW:0,   cat:'fun',       desc:'人体生物电', tags:['joke','meta'] },
   { id:'chatgpt',   name:'ChatGPT (AI)',      emoji:'🤖', port:'usbc',     battery:0,     minW:0,   cat:'fun',       desc:'需要API Key', tags:['joke','meta'] },
   { id:'tesla',     name:'Tesla Model 3',    emoji:'🚗', port:'tesla',    battery:60000, minW:7000,cat:'fun',       desc:'特斯拉超充', tags:['joke','vehicle'] },
-  // v1.2 expansion
+  // v1.3 expansion
   { id:'visionpro', name:'Apple Vision Pro', emoji:'🥽', port:'usbc',     battery:3500,  minW:30, cat:'fun',       desc:'USB-C 30W' },
   { id:'robot',     name:'扫地机器人',       emoji:'🤖', port:'usbc',     battery:5200,  minW:30, cat:'accessory', desc:'回充座' },
   { id:'escooter',  name:'电动滑板车',        emoji:'🛴', port:'usbc',     battery:7500,  minW:50, cat:'fun',       desc:'USB-C PD' },
   { id:'arglasses', name:'AR智能眼镜',        emoji:'👓', port:'usbc',     battery:1500,  minW:10, cat:'accessory', desc:'USB-C' },
+  { id:'smartwatch', name:'智能手表', emoji:'⌚', port:'wireless', battery:500, minW:2, cat:'wearable', desc:'磁吸无线充' },
+  { id:'kindle', name:'电子书阅读器', emoji:'📖', port:'usbc', battery:3000, minW:5, cat:'tablet', desc:'充一次用几周' },
+  { id:'fan', name:'手持小风扇', emoji:'🌀', port:'usbc', battery:2000, minW:5, cat:'gadget', desc:'Type-C 直充' },
+  { id:'smart_speaker', name:'智能音箱', emoji:'🔊', port:'dc', battery:5000, minW:10, cat:'gadget', desc:'圆口 DC 电源' },
+  { id:'dashcam', name:'行车记录仪', emoji:'📹', port:'usbc', battery:500, minW:5, cat:'gadget', desc:'常电+USB供电' },
+  { id:'drone_rc', name:'无人机遥控器', emoji:'🎮', port:'usbc', battery:5000, minW:15, cat:'accessory', desc:'大功率快充' },
+
 ];
 
 const chargers = [
   { id:'5w',       name:'5W 苹果充电器',     emoji:'🔌', cables:['lightning'],            power:5,   cat:'slow',    tag:'🐢 慢充' },
-  { id:'usbport',  name:'电脑USB 2.0',        emoji:'🖥️', cables:['usbc','lightning','microusb'], power:2.5, cat:'slow',    tag:'🐢 超级慢' },
+  { id:'usbport',  name:'电脑USB 2.0', special:'trickle',        emoji:'🖥️', cables:['usbc','lightning','microusb'], power:2.5, cat:'slow',    tag:'🐢 超级慢' },
   { id:'wireless', name:'无线充电板',         emoji:'🔄', cables:['wireless'],              power:10,  cat:'slow',    tag:'无线' },
   { id:'car',      name:'18W QC 车充',        emoji:'🚗', cables:['usbc','lightning','microusb'], power:18, cat:'fast',    tag:'快充' },
   { id:'20w',      name:'20W USB-C 快充',     emoji:'⚡',  cables:['usbc'],                  power:20,  cat:'fast',    tag:'快充' },
   { id:'67w',      name:'67W GaN 氮化镓',     emoji:'🚀', cables:['usbc'],                  power:67,  cat:'fast',    tag:'超快充' },
-  { id:'solar',    name:'太阳能充电板',       emoji:'☀️', cables:['usbc','lightning','microusb'], power:5,   cat:'special', tag:'环保' },
-  { id:'handcrank',name:'手摇发电机',         emoji:'🔄', cables:['usbc','lightning','microusb'], power:3,   cat:'special', tag:'自发电' },
+  { id:'solar',    name:'太阳能充电板', special:'solar',       emoji:'☀️', cables:['usbc','lightning','microusb'], power:5,   cat:'special', tag:'环保' },
+  { id:'handcrank',name:'手摇发电机', special:'manual',         emoji:'🔄', cables:['usbc','lightning','microusb'], power:3,   cat:'special', tag:'自发电' },
   { id:'140w',     name:'140W MacBook 充电器',emoji:'🧱', cables:['usbc'],                  power:140, cat:'danger',  tag:'危险', special:'danger' },
   { id:'cheap',    name:'¥9.9 杂牌万能充',    emoji:'💀', cables:['usbc','lightning','microusb','30pin','tesla'], power:5, cat:'danger',  tag:'危险', special:'explosive' },
   { id:'nuclear',  name:'☢️ 核能充电器',     emoji:'☢️', cables:['usbc','lightning','microusb','wireless','tesla'], power:9999, cat:'danger',  tag:'☢️', special:'nuclear' },
@@ -939,9 +957,14 @@ const chargers = [
   { id:'bio',      name:'人体生物电充电器',   emoji:'⚡',  cables:['usbc'],                  power:0.001, cat:'special', tag:'抽象', special:'bio' },
   { id:'induction',name:'电磁炉改装充电器',   emoji:'🔥', cables:['usbc','lightning','microusb','wireless'], power:2000, cat:'danger',  tag:'危险', special:'induction' },
   { id:'30pin',    name:'古董30-pin底座',     emoji:'📼', cables:['30pin'],                  power:5,   cat:'antique', tag:'考古', special:'obsolete' },
-  // v1.2 expansion
+  // v1.3 expansion
   { id:'wirelessbank',name:'无线磁吸充电宝',  emoji:'🧲', cables:['wireless'],              power:7.5,  cat:'special', tag:'磁吸' },
   { id:'usbchub',  name:'USB-C 扩展坞',        emoji:'💻', cables:['usbc','lightning','microusb'], power:96, cat:'fast',    tag:'多功能' },
+  { id:'mag_cable', name:'磁吸编织充电线', emoji:'🧲', cables:['usbc','lightning','microusb'], power:20, cat:'fast', tag:'🚀 快充（多合一）' },
+  { id:'car_bt', name:'车载蓝牙充电器', emoji:'🚗', cables:['usbc','lightning'], power:15, cat:'fast', tag:'🚀 车充' },
+  { id:'solar_bag', name:'太阳能充电背包', emoji:'🎒', cables:['usbc'], power:10, cat:'slow', tag:'🐢 慢充（户外）' },
+  { id:'supercap', name:'超级电容快充站', emoji:'⚡', cables:['usbc','lightning','microusb','dc'], power:300, cat:'extreme', tag:'☢️ 工业级' },
+
 ];
 
 // ======================================================================
@@ -984,12 +1007,25 @@ const tips = [
   { id:'t33',icon:'🧊', tag:'知识', cat:'knowledge', text:'<strong>低温充电</strong>对锂电池不好。0°C以下充电可能导致锂析出，损坏电池。' },
   { id:'t34',icon:'💀', tag:'抽象', cat:'abstract',  text:'<strong>传说</strong>诺基亚3310被核弹炸过还能用，区区充电爆炸算什么。' },
   { id:'t35',icon:'🔁', tag:'抽象', cat:'abstract',  text:'<strong>充电宝的终极形态</strong>是用充电宝给另一个充电宝充电，让它们无限循环。' },
-  // v1.2 tips
+  // v1.3 tips
   { id:'t36',icon:'🕶️', tag:'知识', cat:'knowledge', text:'<strong>AR眼镜和VR头显</strong>电池续航通常只有2-3小时，充电时不能佩戴使用。' },
   { id:'t37',icon:'🧲', tag:'知识', cat:'knowledge', text:'<strong>磁吸无线充电</strong>靠磁铁对齐位置，iPhone 12以上支持，安卓部分机型也支持。' },
   { id:'t38',icon:'🛴', tag:'常识', cat:'fact',      text:'<strong>电动滑板车</strong>电池组通常是36V或48V，用USB-C充会非常慢，最好用原装充电器。' },
   { id:'t39',icon:'🤖', tag:'常识', cat:'fact',      text:'<strong>扫地机器人回充座</strong>上有金属触点，长期接触可能氧化，定期用橡皮擦清理。' },
   { id:'t40',icon:'💻', tag:'知识', cat:'knowledge', text:'<strong>扩展坞充电</strong>最大功率取决于笔记本规格，有些轻薄本只能用扩展坞的65W PD。' },
+  { id:'t41', icon:'⚡', tag:'科普', cat:'knowledge', text:'<strong>PD快充、QC快充、VOOC闪充互不兼容</strong>。PD是通用标准，QC是高通的，VOOC是OPPO的，混用只能普通速度充电。' },
+  { id:'t42', icon:'🔋', tag:'科普', cat:'knowledge', text:'<strong>手机到80%后充电变慢是故意的</strong>。这叫「涓流充电」，为了保护电池，防止过充导致电极结晶刺破隔膜。' },
+  { id:'t43', icon:'🧲', tag:'科普', cat:'knowledge', text:'<strong>无线充电原理是电磁感应</strong>。线圈通交流电产生磁场，接收端线圈感应出电流。距离越远效率越低。' },
+  { id:'t44', icon:'🔌', tag:'科普', cat:'knowledge', text:'<strong>充电线质量影响充电速度</strong>。劣质线电阻大，同样5V 2A的电流，好线能充进去10W，差线可能一半都消耗在线缆发热上。' },
+  { id:'t45', icon:'🛡️', tag:'常识', cat:'safety', text:'<strong>手机电池不需要用到关机再充</strong>。锂电池没有记忆效应，随用随充最好。深度放电反而会损伤电池寿命。' },
+  { id:'t46', icon:'🎮', tag:'安全', cat:'safety', text:'<strong>边充电边玩手机，电池温度会明显升高</strong>。高温是锂电池最怕的，长期超过40°C充电，电池寿命会加速衰减。' },
+  { id:'t47', icon:'📏', tag:'科普', cat:'knowledge', text:'<strong>mAh（毫安时）和Wh（瓦时）的区别</strong>：mAh×电压=Wh。一个10000mAh的充电宝，3.7V下是37Wh，给手机充大概能充2-3次。' },
+  { id:'t48', icon:'🌍', tag:'科普', cat:'knowledge', text:'<strong>Type-C接口支持最高240W（48V 5A）充电</strong>，也就是USB PD 3.1标准。Lightning接口最高只能到30W左右。' },
+  { id:'t49', icon:'❄️', tag:'科普', cat:'knowledge', text:'<strong>冬天手机充电慢是正常的</strong>。锂电池在低温下内阻增大，化学反应速度变慢，BMS会主动降低充电电流保护电池。' },
+  { id:'t50', icon:'💡', tag:'科普', cat:'knowledge', text:'<strong>充电宝转化率≠容量</strong>。标称20000mAh的充电宝（3.7V/74Wh），升压到5V后效率85%，实际可输出约12500mAh。' },
+  { id:'t51', icon:'📡', tag:'科普', cat:'knowledge', text:'<strong>Qi2无线充电标准基于苹果MagSafe技术</strong>，内置磁铁对位+15W快充。和旧Qi比，对不准充不快的痛点终于解决了。' },
+  { id:'t52', icon:'🔬', tag:'科普', cat:'knowledge', text:'<strong>氮化镓（GaN）充电器为什么更小？</strong>GaN材料开关频率高，变压器、电容可以做得更小，同样65W功率体积只有老款硅的一半。' },
+
 ];
 
 // ======================================================================
@@ -1041,11 +1077,15 @@ const ACHIEVEMENTS = {
   bio_self:{icon:'⚡',name:'人体充电宝',desc:'用自己给设备充电'},
   ebike_fly:{icon:'🛵',name:'电动飞天',desc:'电动自行车被超充桩送上天'},
 
-  // v1.2 achievements
+  // v1.3 achievements
   vision:{icon:'🥽',name:'空间计算',desc:'用Vision Pro试了一次充电'},
   hub_master:{icon:'💻',name:'扩展坞达人',desc:'用USB-C扩展坞成功充电'},
   parallel_me:{icon:'🌀',name:'平行宇宙',desc:'看到了另一个自己在充电'},
   charge_song:{icon:'🎵',name:'充电神曲',desc:'充电时手机自动播放了一首歌'},
+  dad_joke:{icon:'😐',name:'冷笑话充电',desc:'充电器讲了双关冷笑话，你没笑，但你记住了它'},
+  philosophy:{icon:'🤔',name:'设备哲人',desc:'设备问你充电是为了什么，你愣住了'},
+  parallel_world:{icon:'🌀',name:'平行宇宙访客',desc:'进入平行宇宙 #42，电量永远是∞%'}
+
 };
 
 // ======================================================================
@@ -1111,11 +1151,18 @@ const abstractEventsPool = [
     msg:(d,c)=>`🔁 你在用充电宝给充电宝充电。\n等等。你创造了一个永动机。\n两个充电宝的电量开始无限循环。\n物理学家们收到了警报。\n宇宙多了一条新的物理定律。` },
   { id:'ghost_charge', achi:'ghost_charge',
     msg:(d,c)=>`👻 你拿起了充电器。\n还没插到设备上。\n${d.name} 的电量却开始涨了...\n0%...5%...12%...\n你没插。\n屏幕上显示：「已连接无线能量传输，来源：未知」\nWiFi 路由器闪了几下。` },
-  // v1.2 events
+  // v1.3 events
   { id:'parallel_me', achi:'parallel_me',
     msg:(d,c)=>`🌀 电量跳到 88.88% 时，屏幕开始闪烁。\n下一秒，你看到另一个自己正在给同一台设备充电。\n你说的每一句话，那个你都晚了两秒才说。\n你们对视了一眼。他手里的充电器是白色的。你的是黑色的。\n然后他消失了。你的手机多了两张照片：一张是你，一张是和你一模一样的人。` },
   { id:'charge_song', achi:'charge_song',
     msg:(d,c)=>`🎵 ${d.emoji} ${d.name} 充到 50% 时开始播放音乐。\n不是通知铃声，是完整的一首歌。\n你听出这是 2025 年的年度热单。\n但你的手机里没下过这首歌。\n充电器显示：「已传输：音频数据 3.2MB」\n拔掉后，这首歌存进了你的音乐库。版权归属：未知。` },
+  { id:'dad_joke', achi:'dad_joke',
+    msg:(d,c)=>`😐 ${d.emoji} ${d.name} 充了一会儿。\n屏幕突然亮起，显示了一段文字：\n「为什么充电器不跟设备吵架？......\n......因为它们会充电（冲动）。」\n${c.emoji} ${c.name} 颤抖了一下，好像也在憋笑。\n你没有笑。但你记住了这个冷笑话。` },
+  { id:'philosophy', achi:'philosophy',
+    msg:(d,c)=>`🤔 ${d.emoji} ${d.name} 电量到 50% 时停了下来。\n屏幕缓缓显示一行字：\n「你充电，是真的需要我，还是只是习惯了填补空虚？」\n${c.emoji} ${c.name} 闪了闪灯，像是在点头。\n你愣了几秒，决定不深想。` },
+  { id:'parallel_world', achi:'parallel_world',
+    msg:(d,c)=>`🌀 ${d.emoji} ${d.name} 突然黑屏。\n然后又亮了。\n显示：「欢迎来到平行宇宙 #42」\n电量显示：∞%（是的，无穷大）\n你拔掉 ${c.emoji} ${c.name}，电量瞬间变成 0%。\n插回去，又是 ∞%。\n这个宇宙的物理规律，不太一样。` },
+
 ];
 
 // ======================================================================
@@ -1495,12 +1542,13 @@ function getAbstractEvent(d,c){return abstractEventsPool[Math.floor(Math.random(
 
 function evaluateCharge(device, charger) {
   const result = { device, charger, status:'', message:'', achievement:null, speed:null, isAbstract:false };
-  const isWirelessDevice = ['iphone15','iphone14','galaxy','xiaomi','airpods','watch'].includes(device.id);
+  const isWirelessDevice = ['iphone15','iphone14','galaxy','xiaomi','airpods','watch','smartwatch','toothbrush'].includes(device.id);
 
   if (charger.special === 'nuclear') {
     const r = Math.random();
     if (r < 0.7) { const evt=getAbstractEvent(device,charger); result.status='abstract'; result.message=evt.msg(device,charger); result.achievement=evt.achi; result.speed='abstract'; result.isAbstract=true; return result; }
     else if (r < 0.9) { result.status='explode'; result.message=`☢️💥 核能充电器失控了！！！\n${device.emoji} ${device.name} 瞬间熔化。蘑菇云升起来了。邻居问是不是地震了。`; result.achievement='explode'; result.speed='none'; return result; }
+    else { const evt=getAbstractEvent(device,charger); result.status='abstract'; result.message=evt.msg(device,charger); result.achievement=evt.achi; result.speed='abstract'; result.isAbstract=true; return result; }
   }
 
   // === SPECIAL NEW CHARGER HANDLERS ===
@@ -1716,6 +1764,14 @@ ${charger.name} 只有 ${charger.power}W...
   if (charger.special === 'trickle') {
     result.status='success'; result.message=`🖥️ 电脑 USB 2.0。${device.emoji} ${device.name} 显示「正在充电」。预计充满：23 小时 47 分钟。电脑弹窗：「此设备可以更快地性能。」是的，电脑，我们也希望。`; result.achievement='patient_af'; result.speed='glacial'; return result;
   }
+  if (charger.id === '30pin') {
+    result.status='success';
+    result.message=`📼 我的天，你翻出了30-pin底座？！上次见到这玩意儿还是在柜子里积灰。\n${device.emoji} ${device.name} 用转接头勉强接上了。\n--- 30 分钟后 ---\n电量 +2%。但它唤起了你的回忆。2009 年，你第一次用 iPod Touch 听歌。\n那是一个没有无线充电、没有快充的旧时光。\n充电器们，都是有故事的。`;
+    result.achievement='ancient';
+    result.speed='glacial';
+    return result;
+  }
+
 
   const portMatch = charger.cables.some(c => c===device.port || (c==='wireless' && isWirelessDevice));
   if (charger.id==='wireless' && !isWirelessDevice) { result.status='mismatch'; result.message=`🔌 ${device.name} 不支持无线充电！毫无反应。`; result.speed='none'; return result; }
@@ -1767,7 +1823,7 @@ function showChargingAnimation(device, charger, result) {
   else {
     const bc = {glacial:0,slow:1,underpowered:2,normal:3,fast:5,veryfast:7}, count=bc[result.speed]||3;
     const fc = result.speed==='glacial'?'#555566':result.speed==='slow'?'#6688aa':result.speed==='underpowered'?'#887755':(result.speed==='fast'||result.speed==='veryfast')?'#00d4ff':'#44aa44';
-    speedBar.innerHTML = Array.from({length:7},(_,i)=>`<div class="seg ${i<count?'filled':''}" style="${i<count?'background:'+fc:''}"></div>`).join('')+`<div class="speed-label">${result.speed==='slow'?'极慢':result.speed==='slow'?'很慢':result.speed==='underpowered'?'不足':result.speed==='normal'?'正常':result.speed==='fast'?'很快':'超快'}</div>`;
+    speedBar.innerHTML = Array.from({length:7},(_,i)=>`<div class="seg ${i<count?'filled':''}" style="${i<count?'background:'+fc:''}"></div>`).join('')+`<div class="speed-label">${result.speed==='glacial'?'极慢':result.speed==='slow'?'很慢':result.speed==='underpowered'?'不足':result.speed==='normal'?'正常':result.speed==='fast'?'很快':'超快'}</div>`;
   }
 
   const bf = $('batteryFill'), bp = $('batteryPct'), st = $('chargeStatusText');
@@ -2235,7 +2291,7 @@ function filterTips(cat) {
 
 if (tipsBtn && tipsOverlay) {
   tipsBtn.addEventListener('click', (e) => { e.stopPropagation(); openTipsModal(); });
-  document.querySelector('.tips-label')?.addEventListener('click', (e) => { e.stopPropagation(); openTipsModal(); });
+  document.getElementById('tipsLabel')?.addEventListener('click', (e) => { e.stopPropagation(); openTipsModal(); });
 }
 if (tipsModalClose && tipsOverlay) {
   tipsModalClose.addEventListener('click', () => tipsOverlay.classList.remove('open'));
@@ -2272,6 +2328,19 @@ if (achiOverlay) {
 // ======================================================================
 const ANNOUNCEMENTS = [
   {
+    date: '2026-07-17', version: 'v1.3',
+    title: '大扩充：新设备+新充电器+科普知识点',
+    body: `<ul>
+      <li>新增6款设备：智能手表、电子书阅读器、手持小风扇、智能音箱、行车记录仪、无人机遥控器</li>
+      <li>新增4款充电器：磁吸编织充电线、车载蓝牙充电器、太阳能充电背包、超级电容快充站</li>
+      <li>新增12条充电小知识——全是硬核科普：PD/QC/VOOC协议区别、涓流充电原理、无线充电原理、GaN氮化镓技术、Qi2新标准等（共52条）</li>
+      <li>新增3个抽象事件：冷笑话充电器、设备哲学课、平行宇宙 #42</li>
+      <li>40款设备 × 26款充电器 = 1040种组合！</li>
+    </ul>`,
+    tag: '新内容'
+  },
+
+  {
     date: '2026-07-14', version: 'v1.2',
     title: '内容扩充 + SEO优化',
     body: `<ul>
@@ -2283,7 +2352,7 @@ const ANNOUNCEMENTS = [
       <li>优化了相关问题，加速搜索引擎收录</li>
       <li>34款设备 × 22款充电器 = 748种组合等你探索！</li>
     </ul>`,
-    tag: '新内容'
+    tag: '更新'
   },
   {
     date: '2026-07-13', version: 'v1.1',
@@ -2294,7 +2363,7 @@ const ANNOUNCEMENTS = [
       <li>设备徽章：被连续充电的设备卡片上会显示连锁等级标识</li>
       <li>连续完成每日挑战会累积天数，断了就重来</li>
     </ul>`,
-    tag: '新功能'
+    tag: '更新'
   },
   {
     date: '2026-07-12', version: 'v1.01',
@@ -2496,11 +2565,15 @@ document.getElementById('trophyBtn')?.addEventListener('click', function _markVi
   sessionStorage.setItem('achi_viewed', '1');
   this.removeEventListener('click', _markViewed);
 });
-console.log('⚡ 充电模拟器 v1.2 - 内容扩充 + SEO 🚀');
+console.log('⚡ 充电模拟器 v1.3 - 内容扩充 + SEO 🚀');
 console.log(`📱 ${devices.length} 款设备 · 🔌 ${chargers.length} 款充电器 · 🏆 ${Object.keys(ACHIEVEMENTS).length} 成就 · 💡 ${tips.length} 知识`);
 console.log('🔗 新站已提交搜索引擎，等收录中...');
 console.log('✨ 在线小游戏 · 免费 · 纯静态 · 欢迎分享');
+
+
+
 </script>
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8813335635822438" crossorigin="anonymous"></script>
+
 </body>
 </html>

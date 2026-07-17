@@ -7,16 +7,16 @@ $content = Get-Content $SourceFile -Raw -Encoding UTF8
 $originalLength = $content.Length
 
 # 1) Strip DEV PANEL CSS (from marker to </style>)
-$content = $content -replace '(?s)/\* ===== DEV PANEL ===== \*/.*?(?=\n</style>)', ''
+$content = $content -replace '(?s)/\* ===== DEV PANEL ===== \*/.*?(?=\s*</style>)', ''
 
-# 2) Strip DEV PANEL HTML (from comment marker to just before <script>)
-$content = $content -replace '(?s)<!-- ===== DEV PANEL \(bottom bar\) ===== -->.*?(?=\n<script>)', ''
+# 2) Strip DEV PANEL HTML (from comment marker to just before </body>)
+$content = $content -replace '(?s)<!-- ===== DEV PANEL \(bottom bar\) ===== -->.*?(?=\s*</body>)', ''
 
 # 3) Strip DEV PANEL JS section (from // DEV PANEL to just before // INIT)
-$content = $content -replace '(?s)// DEV PANEL.*?(?=\n// =+\n// INIT)', ''
+$content = $content -replace '(?s)\n// DEV PANEL.*?(?=\n// INIT)', ''
 
-# 4) Strip updateDevBadge() call from INIT
-$content = $content -replace '; updateDevBadge\(\);', ';'
+# 4) Strip any remaining updateDevBadge() calls
+$content = $content -replace ';\s*updateDevBadge\(\)\s*;', ';'
 
 $strippedLength = $content.Length
 
